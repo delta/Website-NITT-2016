@@ -1,32 +1,46 @@
+<?php
+if(!defined('__PRAGYAN_CMS'))
+{ 
+    header($_SERVER['SERVER_PROTOCOL'].' 403 Forbidden');
+    echo "<h1>403 Forbidden<h1><h4>You are not authorized to access the page.</h4>";
+    echo '<hr/>'.$_SERVER['SERVER_SIGNATURE'];
+    exit(1);
+}
+?>
 <!DOCTYPE html>
-<html lang="en" manifest="manifest.appcache"> 
+<html lang="en" manifest="<?php echo $TEMPLATEBROWSERPATH; ?>/manifest.appcache"> 
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>National Institute of Tiruchirappalli</title>
+    <title><?php $cmstitle=$TITLE;echo $cmstitle; ?></title>
     
     <!-- Styles -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,800" rel="stylesheet" type="text/css"><!-- Google web fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"><!-- font-awesome -->
-    <link href="css/dropdown-menu.css" rel="stylesheet" type="text/css"><!-- dropdown-menu -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"><!-- Bootstrap -->
-    <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css"><!-- Fancybox -->
-    <link href="css/style.css" rel="stylesheet" type="text/css"><!-- theme styles -->
-    <link rel="stylesheet" type="text/css" href="css/myStyle.css" />
+    <link href="<?php echo $TEMPLATEBROWSERPATH; ?>/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"><!-- font-awesome -->
+    <link href="<?php echo $TEMPLATEBROWSERPATH; ?>/css/dropdown-menu.css" rel="stylesheet" type="text/css"><!-- dropdown-menu -->
+    <link href="<?php echo $TEMPLATEBROWSERPATH; ?>/css/bootstrap.min.css" rel="stylesheet" type="text/css"><!-- Bootstrap -->
+    <link href="<?php echo $TEMPLATEBROWSERPATH; ?>/css/jquery.fancybox.css" rel="stylesheet" type="text/css"><!-- Fancybox -->
+    <link href="<?php echo $TEMPLATEBROWSERPATH; ?>/css/style.css" rel="stylesheet" type="text/css"><!-- theme styles -->
+    <link rel="stylesheet" type="text/css" href="<?php echo $TEMPLATEBROWSERPATH; ?>/css/myStyle.css" />
     <link rel="icon" type="image/png" href="image/logo.png">
-        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="<?php echo $TEMPLATEBROWSERPATH; ?>/js/jquery-2.1.1.min.js"></script>
         <script type="text/javascript">
             $('.dep').hide();
         </script>
-		<script type="text/javascript" src="js/fix_nav.js"></script>
-        <script type="text/javascript" src="js/disp_freq.js"></script>
+		<script type="text/javascript" src="<?php echo $TEMPLATEBROWSERPATH; ?>/js/fix_nav.js"></script>
+        <script type="text/javascript" src="<?php echo $TEMPLATEBROWSERPATH; ?>/js/disp_freq.js"></script>
+        <script language="javascript" type="text/javascript">
+        //defined here for use in javascript
+        var templateBrowserPath = "<?php echo $TEMPLATEBROWSERPATH ?>";
+        var urlRequestRoot = "<?php echo $urlRequestRoot?>";
+    </script>
 
   </head>
   
-  <body role="document">
+  <body role="document" onload="<?php echo $STARTSCRIPTS; ?>">
     <header class="myheader" >
-        <img src="image/header.png" style="position:relative;top:35px;" />
+        <img src="<?php echo $TEMPLATEBROWSERPATH; ?>/image/header.png" style="position:relative;top:35px;" />
     </header>
   
     <!-- device test, don't remove. javascript needed! -->
@@ -59,12 +73,13 @@
         
         	<div class="col-lg-12">
             <div class="container-fluid text-center dashboard"  hidden >
-                            <div class="col-md-1"><a href="#" style="color:black;"> View</a></div>
-                            <div class="col-md-8"></div>
-                            <div class="col-md-1"><a href="#" style="color:black;" > Login </a></div>
-                            <div class="col-md-1"><a href="#" style="color:black;"> Register </a></div>
-                            <div class="col-md-1"> <a href="#" style="color:black;"> Search</a></div>
-
+                            <div class="actionbarcontainer">
+        
+            <div class="actionbar">
+            <?php echo $ACTIONBARMODULE; ?>
+            <?php echo $ACTIONBARPAGE; ?>
+            </div>
+        </div>
                         </div>
                         <script type="text/javascript">
                     $('.dashboard').hide();
@@ -162,7 +177,7 @@
                                 <li><a href="#">Placements at NITT </a></li>
                                 <li><a href="#">Scholarships </a></li>
                                 <li><a href="#">Consultancy & Research</a></li>
-                                <li><a href="#">MoU's signed</a></li>
+                                <li><a href="#">MoU &lsquo;s signed</a></li>
 								<li><a href="#">Tender Invitations</a></li>
                                 <li><a href="#">Vendor Registrations</a></li>
                             </ul>
@@ -209,728 +224,37 @@
 
     <div id="k-body"><!-- content wrapper -->
     
-    	<div class="container"><!-- container -->
+    	
+    <div class="breadcrumb">
+            <div id="breadcrumb">
+            <?php echo $BREADCRUMB; ?>
+            </div>
+        </div>
+        <!-- breadcrumb ends-->
+        <div class="clearer"></div>
         
-        	<div class="row"><!-- row -->
-
-                <div id="k-top-search" class="col-lg-12 clearfix"><!-- top search -->
+        <div class="clearer">
+        </div>
+        <div class="contentcontainer">
+            <div id="cms-leftcontent">
+                <div class="menucontainer">
+                    <?php echo $MENUBAR; ?>
+                    <?php if(isset($WIDGETS[4])) echo $WIDGETS[4]; ?>
+                </div>
                 
-                    <form action="#" id="top-searchform" method="get" role="search">
-                        <div class="input-group">
-                            <input type="text" name="s" id="sitesearch" class="form-control" autocomplete="off" placeholder="Type in keyword(s) then hit Enter on keyboard" />
-                        </div>
-                    </form>
-                    
-                    <div id="bt-toggle-search" class="search-icon text-center"><i class="s-open fa fa-search"><a href="#">&nbsp;Search</a></i><i class="s-close fa fa-times"></i></div><!-- toggle search button -->
-                
-                </div><!-- top search end -->
-            
-            	<div class="k-breadcrumbs col-lg-12 clearfix"><!-- breadcrumbs -->
-                
-                	<ol class="breadcrumb">
-                    	<li><a href="#">HOME</a></li>
-                        
-                    </ol>
-                    
-                </div><!-- breadcrumbs end -->
-                
-            </div><!-- row end -->
-            
-            <div class="row no-gutter fullwidth"><!-- row -->
-            
-                <div class="col-lg-12 clearfix"><!-- featured posts slider -->
-                
-                    <div id="carousel-featured" class="carousel slide" data-interval="4000" data-ride="carousel"><!-- featured posts slider wrapper; auto-slide -->
-                    
-                        <ol class="carousel-indicators"><!-- Indicators -->
-                            <li data-target="#carousel-featured" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-featured" data-slide-to="1"></li>
-                            <li data-target="#carousel-featured" data-slide-to="2"></li>
-                            <li data-target="#carousel-featured" data-slide-to="3"></li>
-                            <li data-target="#carousel-featured" data-slide-to="4"></li>
-                        </ol><!-- Indicators end -->
-                    
-                        <div class="carousel-inner" ><!-- Wrapper for slides -->
-                        
-                            <div class="item active" >
-                                <img src="image/slide-1.jpg" style="width:1900px;max-height:600px;" />                                    
-                                
-                                
-                            </div>
-                            
-                            <div class="item">
-                                    <img src="image/slide-2.jpg" style="width:1900px;max-height:600px;" />                                    
-                                
-                            </div>
-                            
-                            <div class="item">
-                                    <img src="image/slide-3.jpg" style="width:1900px;max-height:600px;" />                                    
-                                
-                            </div>
-                            <div class="item">
-                                    <img src="image/slide-4.jpg" style="width:1900px;max-height:600px;" />                                    
-                                
-                            </div>
-                            <div class="item">
-                                    <img src="image/slide-5.jpg" style="width:1900px;max-height:600px;" />                                    
-                                
-                            </div>
-                            
-                            
-                            
-                        </div><!-- Wrapper for slides end -->
-                    
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-featured" data-slide="prev"><i class="fa fa-chevron-left  fa-2x"></i></a>
-                        <a class="right carousel-control" href="#carousel-featured" data-slide="next"><i class="fa fa-chevron-right  fa-2x"></i></a>
-                        <!-- Controls end -->
-                        
-                    </div><!-- featured posts slider wrapper end -->
-                        
-                </div><!-- featured posts slider end -->
-                
-            </div><!-- row end -->
-           
-            <div class="row no-gutter lgrey-col" ><!-- row -->
-                
-                <div class="col-lg-4 col-md-4"><!-- upcoming events wrapper -->
-                	
-                    <div class="col-padded grey-col" ><!-- inner custom column -->
-                    
-                    	<ul class="list-unstyled clear-margins"><!-- widgets -->
-                        
-                        	<li class="widget-container widget_up_events"><!-- widgets list -->
-                    
-                                <h1 class="title-widget">Upcoming Events</h1>
-                                <div class="carousel-controls">
-                            <a class="prev" href="#events-carousel" data-slide="prev" onclick="disp2(0,-1);"><i class="fa fa-caret-left  fa-2x"></i></a>
-                            <a class="next" href="#events-carousel" data-slide="next" onclick="disp2(0,1);"><i class="fa fa-caret-right  fa-2x"></i></a>
-                            <span id="car-1" style="float:right;"></span>
-                        </div><!--//carousel-controls-->
-                        <div class="section-content downloads">
-                            <div id="events-carousel" class="testimonial-carousel carousel slide">
-                                <div class="carousel-inner">
-                                    <div class="item active">
-                                        <h1 class="title-median"><a href="#" title="">Workshops</a></h1>
-                                        
-                                        <div class="up-event-meta clearfix">
-                                            <div class="up-event-date">Oct 30, 2015</div><div class="up-event-time">9:00 - 11:00</div>
-                                        </div>
-                                        
-                                        <p>
-                                        Workshop on Tools and Techniques for Information Processing Research <a href="#" class="moretag" title="read more">MORE</a> 
-                                        </p>
-                                    
-                                        <h1 class="title-median"><a href="#" title="">Horizons</a></h1>
-                                        
-                                        <div class="up-event-meta clearfix">
-                                            <div class="up-event-date">Nov 12, 2015</div><div class="up-event-time">8:30 - 10:30</div>
-                                        </div>
-                                        
-                                        <p>
-                                       Horizon 2015 - A National Level Student's Symposium on Innovative Catalysis... <a href="#" class="moretag" title="read more">MORE</a> 
-                                        </p>  
-                                         <h1 class="title-median"><a href="#" title="">International Conference on Disaster Management</a></h1>
-                                        
-                                        <div class="up-event-meta clearfix">
-                                            <div class="up-event-date">Nov 21, 2015</div><div class="up-event-date">Nov 21, 2015</div>
-                                        </div>
-                                        
-                                        <p>
-                                       International Conference on Disaster Mitigation and Management for Sustainable Development & Risk Reduction,... <a href="#" class="moretag" title="read more">MORE</a> 
-                                        </p>                           
-                                    </div><!--//item-->
-
-                                    <div class="item">
-                                         <h1 class="title-median"><a href="#" title="">Workshops</a></h1>
-                                        
-                                        <div class="up-event-meta clearfix">
-                                            <div class="up-event-date">Oct 30, 2015</div><div class="up-event-time">9:00 - 11:00</div>
-                                        </div>
-                                        
-                                        <p>
-                                        Workshop on Tools and Techniques for Information Processing Research <a href="#" class="moretag" title="read more">MORE</a> 
-                                        </p>
-                                    
-                                        <h1 class="title-median"><a href="#" title="">Horizons</a></h1>
-                                        
-                                        <div class="up-event-meta clearfix">
-                                            <div class="up-event-date">Nov 12, 2015</div><div class="up-event-time">8:30 - 10:30</div>
-                                        </div>
-                                        
-                                        <p>
-                                       Horizon 2015 - A National Level Student's Symposium on Innovative Catalysis... <a href="#" class="moretag" title="read more">MORE</a> 
-                                        </p>  
-                                         <h1 class="title-median"><a href="#" title="">International Conference on Disaster Management</a></h1>
-                                        
-                                        <div class="up-event-meta clearfix">
-                                            <div class="up-event-date">Nov 21, 2015</div><div class="up-event-date">Nov 21, 2015</div>
-                                        </div>
-                                        
-                                        <p>
-                                       International Conference on Disaster Mitigation and Management for Sustainable Development & Risk Reduction,... <a href="#" class="moretag" title="read more">MORE</a> 
-                                        </p>                           
-                                        
-                                    </div><!--//item-->
-                                    <div class="item">
-                                        <h1 class="title-median"><a href="#" title="">Workshops</a></h1>
-                                        
-                                        <div class="up-event-meta clearfix">
-                                            <div class="up-event-date">Oct 30, 2015</div><div class="up-event-time">9:00 - 11:00</div>
-                                        </div>
-                                        
-                                        <p>
-                                        Workshop on Tools and Techniques for Information Processing Research <a href="#" class="moretag" title="read more">MORE</a> 
-                                        </p>
-                                    
-                                        <h1 class="title-median"><a href="#" title="">Horizons</a></h1>
-                                        
-                                        <div class="up-event-meta clearfix">
-                                            <div class="up-event-date">Nov 12, 2015</div><div class="up-event-time">8:30 - 10:30</div>
-                                        </div>
-                                        
-                                        <p>
-                                       Horizon 2015 - A National Level Student's Symposium on Innovative Catalysis... <a href="#" class="moretag" title="read more">MORE</a> 
-                                        </p>  
-                                         <h1 class="title-median"><a href="#" title="">International Conference on Disaster Management</a></h1>
-                                        
-                                        <div class="up-event-meta clearfix">
-                                            <div class="up-event-date">Nov 21, 2015</div><div class="up-event-date">Nov 21, 2015</div>
-                                        </div>
-                                        
-                                        <p>
-                                       International Conference on Disaster Mitigation and Management for Sustainable Development & Risk Reduction,... <a href="#" class="moretag" title="read more">MORE</a> 
-                                        </p>                                      
-                                    </div><!--//item-->
-                                    
-                                </div><!--//carousel-inner-->
-                            </div><!--//testimonials-carousel-->
-                        </div><!--//section-content-->
-                                <script type="text/javascript">
-                                        /*
-                                        
-                                
-                                
-                                <ul class="list-unstyled">
-                                
-                                    <li class="up-event-wrap">
-                                
-                                        <h1 class="title-median"><a href="#" title="">Workshops</a></h1>
-                                        
-                                        <div class="up-event-meta clearfix">
-                                            <div class="up-event-date">Oct 30, 2015</div><div class="up-event-time">9:00 - 11:00</div>
-                                        </div>
-                                        
-                                        <p>
-                                        Workshop on Tools and Techniques for Information Processing Research <a href="#" class="moretag" title="read more">MORE</a> 
-                                        </p>
-                                    
-                                    </li>
-                                    
-                                    <li class="up-event-wrap">
-                                
-                                        <h1 class="title-median"><a href="#" title="">Horizons</a></h1>
-                                        
-                                        <div class="up-event-meta clearfix">
-                                            <div class="up-event-date">Nov 12, 2015</div><div class="up-event-time">8:30 - 10:30</div>
-                                        </div>
-                                        
-                                        <p>
-                                       Horizon 2015 - A National Level Student's Symposium on Innovative Catalysis... <a href="#" class="moretag" title="read more">MORE</a> 
-                                        </p>
-                                    
-                                    </li>
-                                    
-                                    <li class="up-event-wrap">
-                                
-                                        <h1 class="title-median"><a href="#" title="">International Conference on Disaster Management</a></h1>
-                                        
-                                        <div class="up-event-meta clearfix">
-                                            <div class="up-event-date">Nov 21, 2015</div><div class="up-event-date">Nov 21, 2015</div>
-                                        </div>
-                                        
-                                        <p>
-                                       International Conference on Disaster Mitigation and Management for Sustainable Development & Risk Reduction,... <a href="#" class="moretag" title="read more">MORE</a> 
-                                        </p>
-                                    
-                                    </li>
-                                
-                                </ul>
-                                */
-                                </script>
-                            
-                            </li><!-- widgets list end -->
-                            <li>
-                                <h1 class="title-median">Quicklinks</h1>
-                                <div class="carousel-controls">
-                            <a class="prev" href="#quicklinks-carousel" data-slide="prev" onclick="disp3(0,-1);"><i class="fa fa-caret-left fa-2x"></i></a>
-                            <a class="next" href="#quicklinks-carousel" data-slide="next" onclick="disp3(0,1);"><i class="fa fa-caret-right fa-2x"></i></a>
-                            <span id="car-2" style="float:right;"></span>
-                        </div><!--//carousel-controls-->
-                        <div class="section-content downloads">
-                            <div id="quicklinks-carousel" class="testimonial-carousel carousel slide">
-                                <div class="carousel-inner">
-                                    <div class="item active" style="font-size:14px;">
-                                        <a href="#" style="color:black;">Alumni - RECAL website</a><br>
-                                        <a href="#" style="color:black;">Institute Development</a><br>
-                                        <a href="#" style="color:black;">Institute Employees Directory (August 2015)</a><br>
-                                        <a href="#" style="color:black;">Connect NIT</a><br>
-                                        
-                                    </div><!--//item-->
-
-                                    <div class="item" style="font-size:14px;">
-                                        <a href="#" style="color:black;">Alumni - RECAL website</a><br>
-                                        <a href="#" style="color:black;">Institute Development</a><br>
-                                        <a href="#" style="color:black;">Institute Employees Directory (August 2015)</a><br>
-                                        <a href="#" style="color:black;">Connect NIT</a><br>
-                                        
-                                    </div><!--//item-->
-                            </li>
-                        
-                        </ul><!-- widgets end -->
-                    
-                    </div><!-- inner custom column end -->
-                    
-                </div><!-- upcoming events wrapper end -->
+            </div>
+            <div id="cms-content">
+                <?php echo $INFOSTRING; ?>
+                <?php echo $WARNINGSTRING;?>
+                <?php echo $ERRORSTRING; ?>
+                <?php if(isset($WIDGETS[2])) echo $WIDGETS[2]; ?>
+                <?php echo $CONTENT; ?>
+                <?php if(isset($WIDGETS[3])) echo $WIDGETS[3]; ?>
+            </div>
+            <div class="bottomcontentbar"></div>
+        </div>
+        <div class="clearer"></div>
         
-
-                
-                <div class="col-lg-4 col-md-4"><!-- recent news wrapper -->
-                	
-                    <div class="col-padded"><!-- inner custom column -->
-                    
-                        <ul class="list-unstyled clear-margins"><!-- widgets -->
-                        
-                        	<li class="widget-container widget_recent_news"><!-- widgets list -->
-								<h1 class="title-widget">College News</h1>
-								<div class="carousel-controls">
-									<a class="prev" href="#college-carousel" data-slide="prev"><i class="fa fa-caret-left  fa-2x"></i></a>
-									<a class="next" href="#college-carousel" data-slide="next"><i class="fa fa-caret-right  fa-2x"></i></a>
-								</div><!--//carousel-controls-->
-								<div id="college-carousel" class="testimonial-carousel carousel slide">
-								<div class="carousel-inner">
-								<div class="item active">
-                                
-                                <ul class="list-unstyled">
-                                
-									<li class="recent-news-wrap">
-                                
-                                        <h1 class="title-median"><a href="#" title="">Special Recruitment Drive for Persons With Disabilities</a></h1>
-                                        
-                                        <div class="recent-news-meta">
-                                            <div class="recent-news-date">Oct 31, 2015</div>
-                                        </div>
-                                        
-                                        <div class="recent-news-content clearfix">
-                                            <figure class="recent-news-thumb">
-                                                <a href="#" title=""></a>
-                                            </figure>
-                                            <div class="recent-news-text">
-                                                <p>
-                                                 Amendment: upper age limit is relaxed up to 10 years for recruitment to all posts <a href="#" class="moretag" title="read more">MORE</a> 
-                                                </p>
-                                            </div>
-                                        </div>
-                                    
-                                    </li>
-                                    
-									<li class="recent-news-wrap">
-                                
-                                        <h1 class="title-median"><a href="#" title="">Circulars</a></h1>
-                                        
-                                        <div class="recent-news-meta">
-                                            <div class="recent-news-date">Oct 26, 2015</div>
-                                        </div>
-                                        
-                                        <div class="recent-news-content clearfix">
-                                            <figure class="recent-news-thumb">
-                                                <a href="#" title=""></a>
-                                            </figure>
-                                            <div class="recent-news-text">
-                                                <p>
-                                                Dean Academic Circulars on Cycle Test, Semester Examination, Academic Schedule, etc.. <a href="#" class="moretag" title="read more">MORE</a> 
-                                                </p>
-                                            </div>
-                                        </div>
-                                    
-                                    </li>
-
-                                    <li class="recent-news-wrap">
-                                
-                                        <h1 class="title-median"><a href="#" title="">Notice</a></h1>
-                                        
-                                        <div class="recent-news-meta">
-                                            <div class="recent-news-date">Nov 26, 2015</div>
-                                        </div>
-                                        
-                                        <div class="recent-news-content clearfix">
-                                            <figure class="recent-news-thumb">
-                                                <a href="#" title=""></a>
-                                            </figure>
-                                            <div class="recent-news-text">
-                                                <p>
-                                               Semester reopens for B.Tech Students from 5th January 2017 <a href="#" class="moretag" title="read more">MORE</a> 
-                                                </p>
-                                            </div>
-                                        </div>
-                                    
-                                    </li>
-                                    
-									<li class="recent-news-wrap">
-                                
-                                        <h1 class="title-median"><a href="#" title=""> Ph.D.(PT) Selection List</a></h1>
-                                        
-                                        <div class="recent-news-meta">
-                                            <div class="recent-news-date"> Oct 23, 2015</div>
-                                        </div>
-                                        
-                                        <div class="recent-news-content clearfix">
-                                            <div class="recent-news-text">
-                                                <p>
-                                                Ph.D.(PT) Selection List, Ph.D.(Project Category), M.S. (PT) Selection List.<a href="#" class="moretag" title="read more">MORE</a> 
-                                                </p>
-                                            </div>
-                                        </div>
-                                    
-                                    </li>
-                                
-                                </ul>
-								</div>
-								<div class="item">
-                                
-                                <ul class="list-unstyled">
-                                
-									<li class="recent-news-wrap">
-                                
-                                        <h1 class="title-median"><a href="#" title="">Special Recruitment Drive for Persons With Disabilities</a></h1>
-                                        
-                                        <div class="recent-news-meta">
-                                            <div class="recent-news-date">Oct 31, 2015</div>
-                                        </div>
-                                        
-                                        <div class="recent-news-content clearfix">
-                                            <figure class="recent-news-thumb">
-                                                <a href="#" title=""></a>
-                                            </figure>
-                                            <div class="recent-news-text">
-                                                <p>
-                                                 Amendment: upper age limit is relaxed up to 10 years for recruitment to all posts <a href="#" class="moretag" title="read more">MORE</a> 
-                                                </p>
-                                            </div>
-                                        </div>
-                                    
-                                    </li>
-                                    
-									<li class="recent-news-wrap">
-                                
-                                        <h1 class="title-median"><a href="#" title="">Circulars</a></h1>
-                                        
-                                        <div class="recent-news-meta">
-                                            <div class="recent-news-date">Oct 26, 2015</div>
-                                        </div>
-                                        
-                                        <div class="recent-news-content clearfix">
-                                            <figure class="recent-news-thumb">
-                                                <a href="#" title=""></a>
-                                            </figure>
-                                            <div class="recent-news-text">
-                                                <p>
-                                                Dean Academic Circulars on Cycle Test, Semester Examination, Academic Schedule, etc.. <a href="#" class="moretag" title="read more">MORE</a> 
-                                                </p>
-                                            </div>
-                                        </div>
-                                    
-                                    </li>
-
-                                    <li class="recent-news-wrap">
-                                
-                                        <h1 class="title-median"><a href="#" title="">Notice</a></h1>
-                                        
-                                        <div class="recent-news-meta">
-                                            <div class="recent-news-date">Nov 26, 2015</div>
-                                        </div>
-                                        
-                                        <div class="recent-news-content clearfix">
-                                            <figure class="recent-news-thumb">
-                                                <a href="#" title=""></a>
-                                            </figure>
-                                            <div class="recent-news-text">
-                                                <p>
-                                               Semester reopens for B.Tech Students from 5th January 2017 <a href="#" class="moretag" title="read more">MORE</a> 
-                                                </p>
-                                            </div>
-                                        </div>
-                                    
-                                    </li>
-                                    
-									<li class="recent-news-wrap">
-                                
-                                        <h1 class="title-median"><a href="#" title=""> Ph.D.(PT) Selection List</a></h1>
-                                        
-                                        <div class="recent-news-meta">
-                                            <div class="recent-news-date"> Oct 23, 2015</div>
-                                        </div>
-                                        
-                                        <div class="recent-news-content clearfix">
-                                            <div class="recent-news-text">
-                                                <p>
-                                                Ph.D.(PT) Selection List, Ph.D.(Project Category), M.S. (PT) Selection List.<a href="#" class="moretag" title="read more">MORE</a> 
-                                                </p>
-                                            </div>
-                                        </div>
-                                    
-                                    </li>
-                                
-                                </ul>
-								</div>
-								<div class="item">
-                                
-                                <ul class="list-unstyled">
-                                
-									<li class="recent-news-wrap">
-                                
-                                        <h1 class="title-median"><a href="#" title="">Special Recruitment Drive for Persons With Disabilities</a></h1>
-                                        
-                                        <div class="recent-news-meta">
-                                            <div class="recent-news-date">Oct 31, 2015</div>
-                                        </div>
-                                        
-                                        <div class="recent-news-content clearfix">
-                                            <figure class="recent-news-thumb">
-                                                <a href="#" title=""></a>
-                                            </figure>
-                                            <div class="recent-news-text">
-                                                <p>
-                                                 Amendment: upper age limit is relaxed up to 10 years for recruitment to all posts <a href="#" class="moretag" title="read more">MORE</a> 
-                                                </p>
-                                            </div>
-                                        </div>
-                                    
-                                    </li>
-                                    
-									<li class="recent-news-wrap">
-                                
-                                        <h1 class="title-median"><a href="#" title="">Circulars</a></h1>
-                                        
-                                        <div class="recent-news-meta">
-                                            <div class="recent-news-date">Oct 26, 2015</div>
-                                        </div>
-                                        
-                                        <div class="recent-news-content clearfix">
-                                            <figure class="recent-news-thumb">
-                                                <a href="#" title=""></a>
-                                            </figure>
-                                            <div class="recent-news-text">
-                                                <p>
-                                                Dean Academic Circulars on Cycle Test, Semester Examination, Academic Schedule, etc.. <a href="#" class="moretag" title="read more">MORE</a> 
-                                                </p>
-                                            </div>
-                                        </div>
-                                    
-                                    </li>
-
-                                    <li class="recent-news-wrap">
-                                
-                                        <h1 class="title-median"><a href="#" title="">Notice</a></h1>
-                                        
-                                        <div class="recent-news-meta">
-                                            <div class="recent-news-date">Nov 26, 2015</div>
-                                        </div>
-                                        
-                                        <div class="recent-news-content clearfix">
-                                            <figure class="recent-news-thumb">
-                                                <a href="#" title=""></a>
-                                            </figure>
-                                            <div class="recent-news-text">
-                                                <p>
-                                               Semester reopens for B.Tech Students from 5th January 2017 <a href="#" class="moretag" title="read more">MORE</a> 
-                                                </p>
-                                            </div>
-                                        </div>
-                                    
-                                    </li>
-                                    
-									<li class="recent-news-wrap">
-                                
-                                        <h1 class="title-median"><a href="#" title=""> Ph.D.(PT) Selection List</a></h1>
-                                        
-                                        <div class="recent-news-meta">
-                                            <div class="recent-news-date"> Oct 23, 2015</div>
-                                        </div>
-                                        
-                                        <div class="recent-news-content clearfix">
-                                            <div class="recent-news-text">
-                                                <p>
-                                                Ph.D.(PT) Selection List, Ph.D.(Project Category), M.S. (PT) Selection List.<a href="#" class="moretag" title="read more">MORE</a> 
-                                                </p>
-                                            </div>
-                                        </div>
-                                    
-                                    </li>
-                                
-                                </ul>
-								</div>
-								</div>
-								</div>
-                                
-                            </li><!-- widgets list end -->
-                        
-                        </ul><!-- widgets end -->
-                    
-                    </div><!-- inner custom column end -->
-                    
-                </div><!-- recent news wrapper end -->
-                
-                <div class="col-lg-4 col-md-4"><!-- misc wrapper -->
-                	
-                    <div class="col-padded grey-col" ><!-- inner custom column -->
-                    
-                        <ul class="list-unstyled clear-margins"><!-- widgets -->
-                        
-                        	<li class="widget-container widget_course_search"><!-- widget -->
-                            
-                            	<h1 class="title-widget">Videos</h1>
-                                <img src="image/videos.png">
-                                <p><a href="#" >View</a> more video's from Nit Trichy</p>
-                             
-                            </li><!-- widget end -->
-                            
-                            <li class="widget-container widget_text"><!-- widget -->
-                                
-                <section class="testimonial" style="min-height:420px">
-                        <h1 class="title-widget">Downloads</h1>
-                        <div class="carousel-controls">
-                            <a class="prev" href="#testimonial-carousel" data-slide="prev" onclick="disp(0,-1);"><i class="fa fa-caret-left fa-2x "></i></a>
-                            <a class="next" href="#testimonial-carousel" data-slide="next" onclick="disp(0,1);"><i class="fa fa-caret-right fa-2x "></i></a>
-                            <span id="car-4" style="float:right;"></span>
-                        </div><!--//carousel-controls-->
-                        <div class="section-content downloads">
-                            <div id="testimonial-carousel" class="testimonial-carousel carousel slide">
-                                <div class="carousel-inner">
-                                    <div class="item active">
-                                        <blockquote class="quote">                                  
-
-<li><a  href="#">Ph.D.(FT) Selection List </a>, <a href="#">MS (FT) Selection List</a><br><br></li>
-<li><a href="#">Wanted Research Assistant in the Department of Energy and Environment, August 26, 2015</a></li><br>
-<li><a href="#">Revised Institute Development Proposal (IDP) of TEQIP-II</a></li>
-
-
-
-
-                                        </blockquote>                
-                                        <div class="row">
-     
-                                        </div>                               
-                                    </div><!--//item-->
-
-                                    <div class="item">
-                                        <blockquote class="quote">
-                                            <li><a href="#">Scholarship Circular (new)</a></li><br>
-<li><a href="#">RECAL Common Scholarship Application Form</a></li><br>
-<li><a href="#">Revised Institute Development Proposal (IDP) of TEQIP-II</a></li>
-<li><a href="#">First Year Orientation Programme Schedule</a></li><br>
-                                        </blockquote>
-                                        <div class="row">
-     
-                                        </div>                 
-                                    </div><!--//item-->
-                                    <div class="item">
-                                        <blockquote class="quote">
-                                            <li><a href="#">Last date for M.Tech. Admission 2015 and M.Tech Admission Cancellation at NITT</a></li><br><br>
-<li><a href="#">First Year Orientation Programme Schedule</a></li><br>
-<li><a href="#">Revised Institute Development Proposal (IDP) of TEQIP-II</a></li>
-                                        </blockquote>
-                                        <div class="row">
-     
-                                        </div>                 
-                                    </div><!--//item-->
-                                    
-                                </div><!--//carousel-inner-->
-                            </div><!--//testimonials-carousel-->
-                        </div><!--//section-content-->
-                    </section><!--//testimonials-->
-                
-                            
-                            </li><!-- widget end -->
-                            
-                              
-                        </ul><!-- widgets end -->
-                    
-                    </div><!-- inner custom column end -->
-                    
-                </div><!-- misc wrapper end -->
-            
-            </div><!-- row end -->
-        
-        <style type="text/css">
-    .thumbnail a img:hover{
-        opacity: 0.8;
-    } 
-</style>
-<br/>
-
-          <div title="Central Library-NIT Trichy" class="thumbnail col-xs-5 col-sm-5 col-md-2 col-md-offset-1 col-xs-offset-1 col-sm-offset-1 col-lg-offset-1" style="min-height:100px;padding-right:5px;padding-left:5px;//background:#9BBFD6">
-         <a href="http://www.nitt.edu/home/students/facilitiesnservices/library">  <img src="image/slide-1.jpg" style="height:120px;width:200px"></img></a>
-          <span>Central Library</span>
-          </div>
-          <!-- 1st -->
-
-           <div class="thumbnail col-xs-5 col-sm-5 col-md-2" style="min-height:100px;padding-right:5px;padding-left:5px;//background:#E4B897;" >
-            <a href="/hostel/"><img src="image/slide-2.jpg" style="height:120px;width:200px"></img></a>
-            <span>Festember</span>
-          </div>
-
-        
-
-<div class="thumbnail col-xs-5 col-sm-5 col-md-2 col-sm-offset-1 col-xs-offset-1 col-md-offset-0" style="min-height:100px;padding-right:5px;padding-left:5px;">
-           <!-- <h3 style="text-align:center;position:relative;top:50%;transform:translateY(-50%)">3</h3>-->    
-         <a href="/orion/"><img src="image/slide-3.jpg" style="height:120px;width:200px"></img></a>
-         <span >Orion</span>
-          </div>
-
-           <div class="thumbnail col-xs-5 col-sm-5 col-md-2" style="/*background:#9BBFD6;*/min-height:100px;padding-right:5px;padding-left:5px" >
-           <a href="/hostel/"><img src="image/slide-4.jpg" style="height:120px;width:200px"></img></a>
-            <span>Hostels</span>
-          </div>
-
-<div class="thumbnail col-xs-5 col-sm-5 col-md-2 col-sm-offset-1 col-xs-offset-1 col-md-offset-0" style="min-height:100px;padding-right:5px;padding-left:5px;//background:#E4B897;">
-            <a href="/helipad/"><img src="image/slide-5.jpg" style="height:120px;width:200px"></img></a>
-            <span>Hockey Ground</span>
-          </div>
-
-           <div class="thumbnail col-xs-5 col-sm-5 col-md-2 col-sm-offset-0 col-xs-offset-0 col-md-offset-1 col-lg-offset-1" style="min-height:100px;padding-right:5px;padding-left:5px;" >
-           <a href="/sports/"><img src="image/slide-6.jpg" style="height:120px;width:200px"></img></a>
-            <span>Sports Center</span>
-          </div>
-
-        
-
-        <div class="thumbnail col-xs-5 col-sm-5 col-md-2 col-sm-offset-1 col-xs-offset-1 col-md-offset-0" style="min-height:100px;padding-right:5px;padding-left:5px;//background:#9BBFD6">
-            <a href="/hospi/"><img src="image/slide-7.JPG" style="height:120px;width:200px"></img></a>
-            <span>Hospital</span>
-          </div>
-
-           <div class="thumbnail col-xs-5 col-sm-5 col-md-2" style="/*background:#E4B897;;*/min-height:100px;padding-right:5px;padding-left:5px" >
-           <a href="/workshop/"><img src="image/slide-8.jpg" style="height:120px;width:200px"></img></a>
-            <span>Workshops</span>
-          </div>
-          
-    
-        <div class="thumbnail col-xs-5 col-sm-5 col-md-2 col-sm-offset-1 col-xs-offset-1 col-md-offset-0" style="min-height:100px;padding-right:5px;padding-left:5px;">
-           <a href="/mess/"><img src="image/slide-9.jpg" style="height:120px;width:200px"></img></a>
-            <span>Messes</span>
-          </div>
-
-           <div class="thumbnail col-xs-5 col-sm-5 col-md-2" style="min-height:100px;padding-right:5px;padding-left:5px;//background:#9BBFD6" >
-           <a href="/lhc/"><img src="image/slide-10.jpg" style="height:120px;width:200px"></img></a>
-            <span>Lecture Hall</span>
-          </div>
-
-
-        
-
-        </div><!-- container end -->
-    
     </div><!-- content wrapper end -->
     
     <footer class="footer">
@@ -1013,18 +337,18 @@
 
     <!-- jQuery -->
 
-    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="<?php echo $TEMPLATEBROWSERPATH; ?>/js/jquery-migrate-1.2.1.min.js"></script>
     
     <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="<?php echo $TEMPLATEBROWSERPATH; ?>/js/bootstrap.min.js"></script>
     
         <!-- Drop-down -->
-    <script src="js/dropdown-menu.js"></script>
+    <script src="<?php echo $TEMPLATEBROWSERPATH; ?>/js/dropdown-menu.js"></script>
     
     
     <!-- Fancybox -->
-	<script src="js/jquery.fancybox.pack.js"></script>
-    <script src="js/jquery.fancybox-media.js"></script><!-- Fancybox media -->
+	<script src="<?php echo $TEMPLATEBROWSERPATH; ?>/js/jquery.fancybox.pack.js"></script>
+    <script src="<?php echo $TEMPLATEBROWSERPATH; ?>/js/jquery.fancybox-media.js"></script><!-- Fancybox media -->
     
     <!-- Responsive videos -->
     
@@ -1033,7 +357,7 @@
 	
     
     <!-- Pie charts -->
-    <script src="js/jquery.easy-pie-chart.js"></script>
+    <script src="<?php echo $TEMPLATEBROWSERPATH; ?>/js/jquery.easy-pie-chart.js"></script>
     
     <!-- Google Maps -->
     <script type="text/javascript">
@@ -1045,7 +369,7 @@
     </script>
     
     <!-- Theme -->
-    <script src="js/theme.js"></script>
+    <script src="<?php echo $TEMPLATEBROWSERPATH; ?>/js/theme.js"></script>
     
   </body>
 </html>

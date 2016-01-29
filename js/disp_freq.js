@@ -79,6 +79,28 @@ function disp3(start , dir)
 	}
 }
 
+function disp4(start , dir)
+{
+	var tot_items = $('#college-carousel > .carousel-inner > .item').length;
+
+	if(start)
+	{
+		$("#car-5").html('1/' + String(tot_items));
+	}
+
+	else
+	{
+
+		if((curr_vals.disp4+dir) > tot_items)
+			curr_vals.disp3=1;
+		else
+			curr_vals.disp3 = ((curr_vals.disp3 + dir )< 1)?tot_items:(curr_vals.disp3 + dir);
+		$("#car-5").html(String(curr_vals.disp3)+'/' + String(tot_items));
+		//console.log('here');
+
+	}
+
+}
 
 $(document).ready(function(){
 
