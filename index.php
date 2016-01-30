@@ -23,7 +23,7 @@ if(!defined('__PRAGYAN_CMS'))
     <link href="<?php echo $TEMPLATEBROWSERPATH; ?>/css/jquery.fancybox.css" rel="stylesheet" type="text/css"><!-- Fancybox -->
     <link href="<?php echo $TEMPLATEBROWSERPATH; ?>/css/style.css" rel="stylesheet" type="text/css"><!-- theme styles -->
     <link rel="stylesheet" type="text/css" href="<?php echo $TEMPLATEBROWSERPATH; ?>/css/myStyle.css" />
-    <link rel="icon" type="image/png" href="image/logo.png">
+   <!-- <link rel="icon" type="image/png" href="image/logo.png"> -->
         <script src="<?php echo $TEMPLATEBROWSERPATH; ?>/js/jquery-2.1.1.min.js"></script>
         <script type="text/javascript">
             $('.dep').hide();
@@ -230,7 +230,7 @@ if(!defined('__PRAGYAN_CMS'))
             <?php /*echo $BREADCRUMB;*/ ?>
             </div>
         </div>
-        <!-- breadcrumb ends-->
+         /* breadcrumb ends */
         <div class="clearer"></div>
         
         <div class="clearer">
