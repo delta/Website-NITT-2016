@@ -1,7 +1,8 @@
 var curr_vals = {
 	disp:1,
 	disp2:1,
-	disp3:1
+	disp3:1,
+	disp4:1
 };
 
 
@@ -92,10 +93,10 @@ function disp4(start , dir)
 	{
 
 		if((curr_vals.disp4+dir) > tot_items)
-			curr_vals.disp3=1;
+			curr_vals.disp4=1;
 		else
-			curr_vals.disp3 = ((curr_vals.disp3 + dir )< 1)?tot_items:(curr_vals.disp3 + dir);
-		$("#car-5").html(String(curr_vals.disp3)+'/' + String(tot_items));
+			curr_vals.disp4 = ((curr_vals.disp4 + dir )< 1)?tot_items:(curr_vals.disp4 + dir);
+		$("#car-5").html(String(curr_vals.disp4)+'/' + String(tot_items));
 		//console.log('here');
 
 	}
@@ -107,4 +108,5 @@ $(document).ready(function(){
 	disp(1 ,0);
 	disp2(1,0);
 	disp3(1,0);
+	disp4(1,0);
 })
