@@ -238,8 +238,8 @@ if(!defined('__PRAGYAN_CMS'))
         <div class="contentcontainer">
             <!--<div id="cms-leftcontent">
                 <div class="menucontainer">
-                    <?php echo $MENUBAR; ?>
-                    <?php if(isset($WIDGETS[4])) echo $WIDGETS[4]; ?>
+                    <?php /*echo $MENUBAR;*/ ?>
+                    <?php /*if(isset($WIDGETS[4])) echo $WIDGETS[4];*/ ?>
                 </div>
                 
             </div> -->
