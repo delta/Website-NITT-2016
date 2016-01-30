@@ -52,7 +52,7 @@ if(!defined('__PRAGYAN_CMS'))
     	<div class="row"><!-- row -->
             <nav class="k-functional-navig"><!-- functional navig -->
                 <ul class="list-inline pull-right">
-                    <li><a href="#">Departments</a></li>
+                    <li><a href="#">Doctors</a></li>
                     <li><a href="#">Placements</a></li>
                    <li><a id="dash" href="#" title="" class="dash"><i class="fa fa-toggle-off"></i> Dashboard </a></li>
 				   <script>
