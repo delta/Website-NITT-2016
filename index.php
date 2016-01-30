@@ -225,16 +225,16 @@ if(!defined('__PRAGYAN_CMS'))
     <div id="k-body"><!-- content wrapper -->
     
     	
-    <div class="breadcrumb">
+   <!-- <div class="breadcrumb">
             <div id="breadcrumb">
-            <?php echo $BREADCRUMB; ?>
+            <?php /*echo $BREADCRUMB;*/ ?>
             </div>
         </div>
         <!-- breadcrumb ends-->
         <div class="clearer"></div>
         
         <div class="clearer">
-        </div>
+        </div> -->
         <div class="contentcontainer">
             <!--<div id="cms-leftcontent">
                 <div class="menucontainer">
