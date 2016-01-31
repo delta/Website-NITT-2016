@@ -40,7 +40,7 @@ if(!defined('__PRAGYAN_CMS'))
   
   <body role="document" onload="<?php echo $STARTSCRIPTS; ?>">
     <header class="myheader" >
-        <img src="<?php echo $TEMPLATEBROWSERPATH; ?>/image/header.png" style="position:relative;top:35px;" />
+        <img src="<?php echo $TEMPLATEBROWSERPATH; ?>/image/header.png" style="position:relative;top:29px;" />
     </header>
   
     <!-- device test, don't remove. javascript needed! -->
