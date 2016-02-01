@@ -44,7 +44,7 @@ if(!defined('__PRAGYAN_CMS'))
     </header>
   
     <!-- device test, don't remove. javascript needed! -->
-    <span class="visible-xs"></span><span class="visible-sm"></span><span class="visible-md"></span><span class="visible-lg"></span>
+    <span class="visible-xs"></span><span class="visible-sm"></span><span class="visible-md"></span><span class="visible-lg" style="height:0px;background-color:#cc0033;"></span>
     <!-- device test end -->
     
     <div id="k-head" class="container-fluid"><!-- container + head wrapper -->
@@ -221,7 +221,7 @@ if(!defined('__PRAGYAN_CMS'))
                 </div>
             </section>
     </div><!-- container + head wrapper end -->
-
+<span class="visible-lg" style="height:40px;background-color:#cc0033;width:100%;"></span>
     <div id="k-body"><!-- content wrapper -->
     
     	
