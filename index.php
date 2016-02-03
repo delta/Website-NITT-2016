@@ -47,8 +47,7 @@ if(!defined('__PRAGYAN_CMS'))
     <span class="visible-xs"></span><span class="visible-sm"></span><span class="visible-md"></span><span class="visible-lg" style="height:0px;background-color:#cc0033;"></span>
     <!-- device test end -->
     
-    <div id="k-head" class="container-fluid"><!-- container + head wrapper -->
-    <span class="visible-lg" style="height:40px;background-color:#cc0033;width:100%;"></span>
+    <div id="k-head" class="container-fluid" style="margin:0px;"><!-- container + head wrapper -->
     	<div class="row"><!-- row -->
             <nav class="k-functional-navig"><!-- functional navig -->
                 <ul class="list-inline pull-right">
@@ -221,6 +220,7 @@ if(!defined('__PRAGYAN_CMS'))
                 </div>
             </section>
     </div><!-- container + head wrapper end -->
+    <span class="visible-lg" style="height:40px;background-color:#cc0033;width:100%;"></span>
 <div id="k-body"><!-- content wrapper -->
     
     	
