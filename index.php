@@ -221,8 +221,8 @@ if(!defined('__PRAGYAN_CMS'))
                 </div>
             </section>
     </div><!-- container + head wrapper end -->
-    <span class="visible-lg" style="height:40px;background-color:#cc0033;width:100%;"></span>
-<div id="k-body"><!-- content wrapper -->
+<!--     <span class="visible-lg" style="height:40px;background-color:#cc0033;width:100%;"></span>
+ --><div id="k-body"><!-- content wrapper -->
     
     	
    <!-- <div class="breadcrumb">
