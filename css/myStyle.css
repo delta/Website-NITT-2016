@@ -17,3 +17,6 @@
 .up-event-date {
     color: #E4766E;
 }
+h1.title-median {
+    text-transform: none;
+}
