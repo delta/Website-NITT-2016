@@ -70,8 +70,7 @@ function googleTranslateElementInit() {
                     <li><a href="webmail.nitt.edu/horde/login.php">Webmail</a></li>
                     <li><a href="#">Sitemap</a></li>
 					<li><a href="#">Contact</a></li>
-					<li><a href="#">Translate</a></li>
-                </ul>
+				</ul>
             
                 
                 
