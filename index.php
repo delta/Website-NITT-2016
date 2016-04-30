@@ -60,7 +60,7 @@ if(!defined('__PRAGYAN_CMS'))
 				   $('.dashboard').toggle('fast');
 				   });
 				   </script>
-                    <li><a href="#">Webmail</a></li>
+                    <li><a href="webmail.nitt.edu/horde/login.php">Webmail</a></li>
                     <li><a href="#">Sitemap</a></li>
 					<li><a href="#">Contact</a></li>
 					<li><a href="#">Translate</a></li>
@@ -192,31 +192,31 @@ if(!defined('__PRAGYAN_CMS'))
     <section class="visible-lg">
                 <div class="container dep" style="display:none;">
                     <div class="col-md-2">
-                        <a href="#">Architecture</a><br>
-                        <a href="#">CECASE</a><br>
-                        <a href="#">Chemical Engineering</a><br>
-                        <a href="#">Chemistry</a><br>
+                        <a href="/home/academics/departments/architecture">Architecture</a><br>
+                        <a href="/home/academics/departments/cecase">CECASE</a><br>
+                        <a href="/home/academics/departments/chem">Chemical Engineering</a><br>
+                        <a href="/home/academics/departments/chemistry">Chemistry</a><br>
                 </div>  
                 <div class="col-md-3">
-                    <a href="#">Civil Engineering</a><br>
-                        <a href="#">Computer Applications</a><br>
-                        <a href="#">Computer Science & Engineering</a><br>
-                        <a href="#">DEE</a><br>
+                    <a href="/home/academics/departments/civil">Civil Engineering</a><br>
+                        <a href="/home/academics/departments/ca">Computer Applications</a><br>
+                        <a href="/home/academics/departments/cse">Computer Science & Engineering</a><br>
+                        <a href="/home/academics/departments/dee">DEE</a><br>
                 </div>
                 <div class="col-md-4">
-                    <a href="#">Electrical & Electronics Engineering</a><br>
-                        <a href="#">Electronics & Communications Engineering</a><br>
-                        <a href="#">Humanities</a><br>
-                        <a href="#">Instrumentation & Control Engineering</a><br>
-                        <a href="#">Management Studies</a><br>
+                    <a href="/home/academics/departments/eee">Electrical & Electronics Engineering</a><br>
+                        <a href="/home/academics/departments/ece">Electronics & Communications Engineering</a><br>
+                        <a href="/home/academics/departments/humanities">Humanities</a><br>
+                        <a href="/home/academics/departments/ice">Instrumentation & Control Engineering</a><br>
+                        <a href="/home/academics/departments/management">Management Studies</a><br>
                 </div>
                 <div class="col-md-3">
                     
-                        <a href="#">Mathematics</a><br>
-                        <a href="#">Mechanical Engineering</a><br>
-                        <a href="#">Metalurgical & Materials Engineering</a><br>
-                        <a href="#">Production Engineering</a><br>
-                        <a href="#">Physics</a><br>
+                        <a href="/home/academics/departments/maths">Mathematics</a><br>
+                        <a href="/home/academics/departments/mech">Mechanical Engineering</a><br>
+                        <a href="/home/academics/departments/meta">Metalurgical & Materials Engineering</a><br>
+                        <a href="/home/academics/departments/prod">Production Engineering</a><br>
+                        <a href="/home/academics/departments/physics">Physics</a><br>
                         
                 </div>
             </section>
