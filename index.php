@@ -270,7 +270,7 @@ function googleTranslateElementInit() {
                 <div class="footer-col col-md-3 col-sm-4 about marginfooter">
                     <div class="footer-col-inner paddedfooter">
                         <h3>Academics</h3>
-                        <ul>
+                        <ul style="list-style:none;">
                             <li><a href="#"><i class="fa fa-caret-right"></i> Academics Programmes</a></li>
                             <li><a href="#"><i class="fa fa-caret-right"></i> Departments</a></li>
                             <li><a href="#"><i class="fa fa-caret-right"></i> Faculty</a></li>
@@ -283,7 +283,7 @@ function googleTranslateElementInit() {
                  <div class="footer-col col-md-3 col-sm-4 about marginfooter">
                     <div class="footer-col-inner paddedfooter">
                         <h3>Admissions</h3>
-                        <ul>
+                        <ul style="list-style:none;">
                             <li><a href="#"><i class="fa fa-caret-right"></i> B.Tech/B.Arc</a></li>
                             <li><a href="#"><i class="fa fa-caret-right"></i> M.Tech/M.Sc</a></li>
                             <li><a href="#"><i class="fa fa-caret-right"></i> MCA/MBA</a></li>
@@ -296,7 +296,7 @@ function googleTranslateElementInit() {
                 <div class="footer-col col-md-3 col-sm-4 about marginfooter">
                     <div class="footer-col-inner paddedfooter">
                         <h3>Students Life</h3>
-                        <ul >
+                        <ul style="list-style:none;">
                             <li><a href="#"><i class="fa fa-caret-right"></i> Events</a></li>
                             <li><a href="#"><i class="fa fa-caret-right"></i> Clubs & Associations</a></li>
                             <li><a href="#"><i class="fa fa-caret-right"></i> Hostel & Messes</a></li>
@@ -309,7 +309,7 @@ function googleTranslateElementInit() {
                 <div class="footer-col col-md-3 col-sm-4 about marginfooter">
                     <div class="footer-col-inner paddedfooter">
                         <h3>Other Links</h3>
-                        <ul>
+                        <ul style="list-style:none;">
                             <li><a href="#"><i class="fa fa-caret-right"></i> Tenders & Notices</a></li>
                             <li><a href="#"><i class="fa fa-caret-right"></i> Job Opportunities</a></li>
                             <li><a href="#"><i class="fa fa-caret-right"></i> RTI</a></li>
