@@ -139,24 +139,24 @@ if(!defined('__PRAGYAN_CMS'))
                             <a id="d" href="#" title="" class="department"><i class="fa fa-toggle-off"></i> Department</a>
 							<script>$('#d').click(function(){$(this).find('i').toggleClass('fa-toggle-off fa-toggle-on');});</script>
                             <ul class="sub-menu visible-xs">
-                                <li><a href="#">Computer Science & Engineering</a></li>
-                                <li><a href="#">Electrical & Electronics Engineering</a></li>
-                                <li><a href="#">Electronics & Communication Engineering</a></li>
-                                <li><a href="#">Instrumentation & Control Engineering</a></li>
-                                <li><a href="#">Mechanical Engineering</a></li>
-                                <li><a href="#">Civil Engineering</a></li>
-                                <li><a href="#">Chemical Engineering</a></li>
-                                <li><a href="#">Production Engineering</a></li>
-                                <li><a href="#">Metalurgical & Material's Engineering</a></li>
+                                <li><a href="/home/academics/departments/cse/">Computer Science & Engineering</a></li>
+                                <li><a href="/home/academics/departments/eee/">Electrical & Electronics Engineering</a></li>
+                                <li><a href="/home/academics/departments/ece/">Electronics & Communication Engineering</a></li>
+                                <li><a href="/home/academics/departments/ice">Instrumentation & Control Engineering</a></li>
+                                <li><a href="/home/academics/departments/mech">Mechanical Engineering</a></li>
+                                <li><a href="/home/academics/departments/civil">Civil Engineering</a></li>
+                                <li><a href="/home/academics/departments/chem">Chemical Engineering</a></li>
+                                <li><a href="/home/academics/departments/prod">Production Engineering</a></li>
+                                <li><a href="/home/academics/departments/meta">Metalurgical & Material's Engineering</a></li>
                                 <li>
                                     <a href="#">Others</a>
                                     <ul class="sub-menu">
-                                        <li><a href="#">Mathematics</a></li>
+                                        <li><a href="/home/academics/departments/maths">Mathematics</a></li>
                                         <li>
-                                            <a href="#">Chemistry</a>
+                                            <a href="/home/academics/departments/chemistry">Chemistry</a>
                                             
                                         </li>
-                                        <li><a href="#">Physics</a></li>
+                                        <li><a href="/home/academics/departments/physics">Physics</a></li>
                                     </ul>
                                 </li>
                             </ul>
