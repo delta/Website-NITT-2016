@@ -35,6 +35,12 @@ if(!defined('__PRAGYAN_CMS'))
         var templateBrowserPath = "<?php echo $TEMPLATEBROWSERPATH ?>";
         var urlRequestRoot = "<?php echo $urlRequestRoot?>";
     </script>
+    <script type=text/javascript src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type=text/javascript>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
 
   </head>
   
@@ -53,6 +59,7 @@ if(!defined('__PRAGYAN_CMS'))
             <nav class="k-functional-navig"><!-- functional navig -->
                 <ul class="list-inline pull-right">
                     <li><a href="#">Departments</a></li>
+                    <li><div id=google_translate_element></div></li>
                     <li><a href="#">Placements</a></li>
                    <li><a id="dash" href="#" title="" class="dash"><i class="fa fa-toggle-off"></i> Dashboard </a></li>
 				   <script>
@@ -139,7 +146,7 @@ if(!defined('__PRAGYAN_CMS'))
                             <a id="d" href="#" title="" class="department"><i class="fa fa-toggle-off"></i> Department</a>
 							<script>$('#d').click(function(){$(this).find('i').toggleClass('fa-toggle-off fa-toggle-on');});</script>
                             <ul class="sub-menu visible-xs">
-                                <li><a href="/home/academics/departments/cse/">Computer Science & Engineering</a></li>
+                                <li><a href="/home/academics/departments/cse/">Computer Science &amp; Engineering</a></li>
                                 <li><a href="/home/academics/departments/eee/">Electrical & Electronics Engineering</a></li>
                                 <li><a href="/home/academics/departments/ece/">Electronics & Communication Engineering</a></li>
                                 <li><a href="/home/academics/departments/ice">Instrumentation & Control Engineering</a></li>
