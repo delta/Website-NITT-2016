@@ -8,7 +8,7 @@ if(!defined('__PRAGYAN_CMS'))
 }
 ?>
 <!DOCTYPE html>
-<html lang="en" manifest="<?php echo $TEMPLATEBROWSERPATH; ?>/manifest.appcache"> 
+<html lang="en"><!--manifest="<?php echo $TEMPLATEBROWSERPATH; ?>/manifest.appcache"> -->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
