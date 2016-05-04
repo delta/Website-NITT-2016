@@ -188,8 +188,8 @@ span.alter-menu-icon { display: block; width: 24px; height: 24px; background: ur
 .s-open { color: #FF1C00;}
 .opened .s-open { display: none;}
 .opened .s-close { display: block; }
-.search-icon { position: absolute; top: -1px; right: 15px; width: 100px; height: 28px; line-height: 25px; color:#000; background-color: #FFF; cursor: pointer; z-index: 2; transition: all .21s; }
-.search-icon.opened { top: 48px; background-color: #FFF; }
+.search-icon { position: absolute; top: -1px; right: 15px; width: 100px; height: 35px; line-height: 25px; color:#000; background-color: #C1C1E8; cursor: pointer; z-index: 2; transition: all .21s; }
+.search-icon.opened { top: 48px; background-color: #C1C1E8; }
 #top-searchform .form-control:focus { border-left: none; border-top: none; border-right: none; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 /* == END top search == */
 
