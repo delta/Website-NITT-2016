@@ -51,7 +51,7 @@ function googleTranslateElementInit() {
   
     <!-- device test, don't remove. javascript needed! -->
     <!-- <span class="visible-xs"></span><span class="visible-sm"></span><span class="visible-md"></span><span class="visible-lg" style="height:0px;background-color:#cc0033;"></span> -->
-    <hr style="height:2px;background-color:#cc0033;"></hr>
+    <hr style="height:2px;background-color:#cc0033; margin:0"></hr>
     <!-- device test end -->
     
     <div id="k-head" class="container-fluid" style="margin:0px;"><!-- container + head wrapper -->
