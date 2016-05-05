@@ -25,4 +25,9 @@ $(document).scroll(function scroll_fix_nav	() {
 // else {
 // 	$(".k-main-navig").css("visibility", "hidden");
 // }
+if(($(window).width()) >=1001)
+{
+  $('.search-icon').css('margin','0');
+}
+
 });
