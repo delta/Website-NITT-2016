@@ -20,3 +20,7 @@
 h1.title-median {
     text-transform: none;
 }
+.navbar-fixed-top
+{
+	box-shadow: 1px 5px 5px 0px;
+}
