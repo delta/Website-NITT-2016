@@ -49,4 +49,17 @@ form
 {
         margin-left:10px;
 }
-
+table.iconspanel > tbody > tr > td
+{
+    border: 1px solid #D4CCCC;
+}
+table.iconspanel > tbody > tr > td:hover {
+    background-color: #336699;
+    border-bottom: 1px black solid;
+    border-right: 1px black solid;
+}
+table.iconspanel td:hover {
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
