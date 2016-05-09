@@ -376,11 +376,13 @@ function googleTranslateElementInit() {
     
     <!-- Theme -->
     <script src="<?php echo $TEMPLATEBROWSERPATH; ?>/js/theme.js"></script>
-    
+    <script type="text/javascript">
+        
+$('iframe').load( function() {
+    $('iframe').contents().find("head")
+      .append($("<style type='text/css'>.goog-te-menu2-item div, .goog-te-menu2-item:link div, .goog-te-menu2-item:visited div, .goog-te-menu2-item:active div {color: #cc0033 !important;}</style>"));
+});
+
+    </script>
   </body>
-  <style type="text/css">
-        .goog-te-menu2-item div, .goog-te-menu2-item:link div, .goog-te-menu2-item:visited div, .goog-te-menu2-item:active div {
-    color: #cc0033 !important;
-}
-    </style>
 </html>
