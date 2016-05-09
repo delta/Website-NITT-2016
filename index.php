@@ -376,7 +376,9 @@ function googleTranslateElementInit() {
     
     <!-- Theme -->
     <script src="<?php echo $TEMPLATEBROWSERPATH; ?>/js/theme.js"></script>
-    <script type="text/javascript">
+    
+  </body>
+  <script type="text/javascript">
         
 $('iframe').load( function() {
     $('iframe').contents().find("head")
@@ -384,5 +386,4 @@ $('iframe').load( function() {
 });
 
     </script>
-  </body>
 </html>
