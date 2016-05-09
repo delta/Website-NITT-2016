@@ -376,6 +376,11 @@ function googleTranslateElementInit() {
     
     <!-- Theme -->
     <script src="<?php echo $TEMPLATEBROWSERPATH; ?>/js/theme.js"></script>
+    <style type="text/css">
+        .goog-te-menu2-item div, .goog-te-menu2-item:link div, .goog-te-menu2-item:visited div, .goog-te-menu2-item:active div {
+    color: #cc0033 !important;
+}
+    </style>
     
   </body>
 </html>
