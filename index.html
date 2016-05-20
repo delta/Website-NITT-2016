@@ -356,34 +356,31 @@ function googleTranslateElementInit() {
                             <li class="widget-container widget_up_events" style="padding-bottom: 30px;"><!-- widgets list -->
                     
                                 <h1 class="title-widget" style="font-size:1.1429em;color:#5f574f;font-weight:400"><i class="fa fa-calendar fa-1"></i> Achievement news</h1>
-                                <div id="achievements" style="background-color:white;height: 70px;">
-                                <div id="ac" style="position:relative;z-index: 0;top: 42%;left:30%;">
-                                    Achievement 1                                    
-                                </div>
-                                <!-- <div id="ac2" style="position:relative;top:-6%;z-index: 1;left:30%;">
-                                    Achievement 2
-                                </div>
-                                <div id="ac3" style="position:relative;top:-20%;left:30%;z-index: 2;">
-                                    Achievement 3
-                                </div> -->
-                                    <script type="text/javascript">
-                                    var k =1;
-                                    var arr = new Array('Achievement1','Achievement2','Achievement3');
-                                        $(document).ready(function(){
-                                            // $('#ac2').css('disply','none');
-                                            // $('#ac3').css('display','none');
-                                            setInterval(function(){
-                                                $('#ac').animate({'opacity':0},2000);
-                                                if(k+1>3)
-                                                    k=1;
-                                                else
-                                                    k=k+1;
+                                <div id="achievements" >
+                               
+                                <div style="background:#883D3D">
+     Pretty cool eh? This slide is proof the content can be anything.
+   </div>
+   <div style="background:#554868">
+     Pretty cool eh? This slide is proof the content can be anything.
+   </div>
+   <div  style="background:#38b5aa">
+     Pretty cool eh? This slide is proof the content can be anything.
+   </div>
 
-                                                                                            
-                                               setTimeout(function(){$('#ac').html(String(arr[k-1]));$('#ac').animate({'opacity':1},1000);},3000);
-                                            } , 7000);
-                                        });
+<script type="text/javascript">
+$("#achievements > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#achievements > div:first')
+    .fadeOut(3000)
+    .next()
+    .fadeIn(3000)
+    .end()
+    .appendTo('#achievements');
+},  5000);
                                     </script>
+                                    
                                 </div>
 
                                    </li><!-- widgets list end -->
@@ -569,7 +566,7 @@ function googleTranslateElementInit() {
 <!-- START OF DOWNLOADS --> 
     <div role="tabpanel" class="tab-pane fade" id="downloads">
      <ul class="list-group"><li class="list-group-item">
-    International Conference on Disaster Mitigation and Management for Sustainable Development &amp; Risk Reduction<a href="http://testing.nitt.edu/#" class="moretag" title="read more">MORE</a> 
+    International Conference on Disaster Mitigation 
     </li>
      <li class="list-group-item">
     International Conference on Disaster Mitigation and Management for Sustainable Development &amp; Risk Reduction<a href="http://testing.nitt.edu/#" class="moretag" title="read more">MORE</a> 
