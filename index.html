@@ -24,6 +24,7 @@
         </script>
 		<script type="text/javascript" src="js/fix_nav.js"></script>
         <script type="text/javascript" src="js/disp_freq.js"></script>
+        <script type="text/javascript" src="js/search_navbar.js"></script>
         <script language="javascript" type="text/javascript">
         //defined here for use in javascript
         var templateBrowserPath = "/cms/templates/nittmain16";
@@ -60,10 +61,25 @@ function googleTranslateElementInit() {
                 </ul>
 
                 <ul class="list-inline pull-left">
-                    <li><span style="color:#d1d1d1;font-size:12px">11 May, 2016 | 8:38:44 PM IST</span></li>
+                    <li><span style="font-size:15px;color:white"></span> <span style="color:#d1d1d1;font-size:12px"> 11 May, 2016 | <i class="fa fa-clock-o" aria-hidden="true"></i> 8:38:44 PM IST</span></li>
                     <li><a href="http://testing.nitt.edu/#"><span style="font-size:20px"><i class="fa fa-home" aria-hidden="true"></i></span></a></li>
           
-                    <li><a href="http://testing.nitt.edu/#">Search</a></li>
+                    <li> 
+                   <form class="navbar-form top_search" style="margin-top:0px;" role="search">
+             
+                <input type="hidden" value="" id="hid_srch_text">
+                <div class="form-group" >
+                                <i class="fa fa-search" aria-hidden="true"></i> 
+                                 <i id="srch_load1" style="display:none" class="fa fa-refresh fa-spin-custom"></i>
+                                  <input type="text" class="form-control search_top" name="case_search" id="case_search" autocomplete="off" onclick="sch_slide();" onkeypress="onKeyPress(event,'case_search');" onkeydown="return goForSearch(event,'');" placeholder="Search here.." style="width: 120px;height:25px;margin-top:-5px;background:#233046;color:white">
+                                  
+
+                </div>
+                 
+                <div class="cb"></div>
+             </form>
+             <div id="ajax_search" class="ajx-srch-dv1"></div>
+                    </li>
                    
                 </ul>
             
@@ -98,7 +114,7 @@ function googleTranslateElementInit() {
             <div id="cms-actionbarModule"><span class="cms-actionbarModuleItem"><a class="robots-nofollow" rel="nofollow" href="http://testing.nitt.edu/+view">View</a></span>
 </div>            <div id="cms-actionbarPage"><span class="cms-actionbarPageItem"><a class="robots-nofollow cms-actionlogin" rel="nofollow" href="http://testing.nitt.edu/+login">Login</a></span>
 <span class="cms-actionbarPageItem"><a class="robots-nofollow cms-actionlogin&amp;subaction=register" rel="nofollow" href="http://testing.nitt.edu/+login&amp;subaction=register">Register</a></span>
-<span class="cms-actionbarPageItem"><a class="robots-nofollow cms-actionsearch" rel="nofollow" href="http://testing.nitt.edu/+search">Search</a></span>
+<!--<span class="cms-actionbarPageItem"><a class="robots-nofollow cms-actionsearch" rel="nofollow" href="http://testing.nitt.edu/+search">Search</a></span> -->
 </div>            </div>
         </div>
                         </div>
@@ -268,8 +284,8 @@ function googleTranslateElementInit() {
         
         	<div class="row"><!-- row -->
 
-                <div id="k-top-search" class="col-lg-12 clearfix"><!-- top search -->
-                
+            <!--    <div id="k-top-search" class="col-lg-12 clearfix"> --><!-- top search -->
+              <!--  
                     <form action="http://testing.nitt.edu/#" id="top-searchform" method="get" role="search" style="display: none;">
                         <div class="input-group">
                             <input type="text" name="s" id="sitesearch" class="form-control" autocomplete="off" placeholder="Type in keyword(s) then hit Enter on keyboard">
@@ -278,7 +294,7 @@ function googleTranslateElementInit() {
                     
                     <div id="bt-toggle-search" class="search-icon text-center" style="margin: 0px;"><i class="s-open fa fa-search"><a href="http://testing.nitt.edu/#"> Search</a></i><i class="s-close fa fa-times"></i></div><!-- toggle search button -->
                 
-                </div><!-- top search end -->
+                <!--</div> --><!-- top search end -->
             
             	<div class="k-breadcrumbs col-lg-12 clearfix"><!-- breadcrumbs -->
                 
@@ -358,7 +374,7 @@ function googleTranslateElementInit() {
                         
                             <li class="widget-container widget_up_events" style="padding-bottom: 30px;"><!-- widgets list -->
                     
-                                <h1 class="title-widget" style="font-size:1.1429em;color:#5f574f;font-weight:400"><i class="fa fa-calendar fa-1"></i> Achievement news</h1>
+                                <h1 class="title-widget" style="font-size:1.1429em;color:#5f574f;font-weight:400"><i class="fa fa-calendar fa-1"></i> Achievements</h1>
                                 <div id="achievements" style="text-align:center">
                                
                                 <div style="background:#883D3D">
@@ -424,7 +440,7 @@ setInterval(function() {
 
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#update" aria-controls="update" role="tab" data-toggle="tab">Update</a></li>
+    <li role="presentation" class="active"><a href="#update" aria-controls="update" role="tab" data-toggle="tab">Events</a></li>
     <li role="presentation"><a href="#circular" aria-controls="circular" role="tab" data-toggle="tab">Circulars</a></li>
     <li role="presentation"><a href="#press" aria-controls="press" role="tab" data-toggle="tab">Press releases</a></li>
     <li role="presentation"><a href="#ads" aria-controls="ads" role="tab" data-toggle="tab">Advertisment</a></li>
@@ -603,6 +619,9 @@ setInterval(function() {
   </div>
 </div>
 
+
+
+
 <div class="col-lg-3 col-md-3"><!-- misc wrapper -->
                     
                     <div class="col-padded grey-col"><!-- inner custom column -->
@@ -718,6 +737,7 @@ setInterval(function() {
     } 
 </style>
 <br>
+
 
         
 
