@@ -619,6 +619,48 @@ a.list-group-item.active > .badge, .nav-pills > .active > a > .badge { backgroun
 .pagination > li:last-child > a, .pagination > li:last-child > span, .pagination > li:last-child > a:hover, .pagination > li:last-child > span:hover { border-right: none; }
 /* == END bootstrap pagination == */
 
+/* == START Industry icons == */
+.iconsdiv
+{
+	text-align:center;
+	margin:20px;
+	padding-left:0;
+}
+.iconlist
+{
+	display:inline-block;
+	margin:5px;
+}
+
+.circleback
+{
+	border-radius:50%;
+	width:70px;
+	height:70px;
+}
+
+.type1
+{
+	background-color:rgba(140, 43, 44, 0.7);
+}
+.type2
+{
+	background-color:rgba(140, 81, 44, 0.7);
+}
+.type3
+{
+	background-color:rgba(52, 31, 141, 0.7);
+}
+.type4
+{
+	background-color:rgba(52, 31, 65, 0.7);	
+}
+.type5
+{
+	background-color:rgba(52, 92, 117, 0.7);
+}
+/* == END Industry icons == */
+
 /* == custom rows and columns == */
 .row.no-gutter { margin-left: 0; margin-right: 0; }
 .row.no-gutter [class*='col-']:not(:first-child), .row.no-gutter [class*='col-']:not(:last-child) { padding-right: 0; padding-left: 0; }
