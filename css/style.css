@@ -638,7 +638,14 @@ a.list-group-item.active > .badge, .nav-pills > .active > a > .badge { backgroun
 	width:70px;
 	height:70px;
 }
-
+.type1:hover, .type2:hover, .type3:hover, .type4:hover, .type5:hover 
+{
+	background-color:rgba(0, 0, 0, 0.7);
+	width:100px;
+	height:100px;
+	-webkit-transition: width 2s, background-color 2s, height 2s; /* Safari */
+    transition: width 2s, background-color 2s, height 2s;
+}
 .type1
 {
 	background-color:rgba(140, 43, 44, 0.7);
