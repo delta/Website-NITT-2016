@@ -59,7 +59,7 @@ function googleTranslateElementInit() {
             <nav class="k-functional-navig"><!-- functional navig -->
                 <ul class="list-inline pull-right">
                     <li><a href="#">Departments</a></li>
-                    <li><div id=google_translate_element></div></li>
+                    <li><div id="google_translate_element"></div></li>
                     <li><a href="#">Placements</a></li>
                    <li><a id="dash" href="#" title="" class="dash"><i class="fa fa-toggle-off"></i> Dashboard </a></li>
 				   <script>
