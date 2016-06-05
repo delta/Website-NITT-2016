@@ -629,8 +629,8 @@ a.list-group-item.active > .badge, .nav-pills > .active > a > .badge { backgroun
 .iconlist
 {
 	display:inline-block;
-	margin:15px;
-	max-width:120px;
+	margin:10px;
+	max-width:80px;
 }
 
 .circleback
@@ -648,15 +648,32 @@ a.list-group-item.active > .badge, .nav-pills > .active > a > .badge { backgroun
 }
 .iconimg
 {
+	height:40px;
 	vertical-align:middle;
 }
-.icontext
+a.icontext
 {
 	display:table;
+	font-size:14px;
+	text-decoration:none;
+}
+a.icontext:link, a.icontext:visited
+{
+	color:rgba(50,76,99,1);
+}
+a.icontext:hover
+{
+	color:rgba(88,138,181,1);
+}
+a.icontext:active
+{
+	color:rgba(74,142,191,1);
 }
 .type1:hover, .type2:hover, .type3:hover, .type4:hover, .type5:hover 
 {
 	background-color:rgba(0, 0, 0, 0.7);
+	-webkit-transition: background-color 2s; /* Safari */
+    transition: background-color 2s;
 }
 .type1
 {
