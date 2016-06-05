@@ -669,12 +669,7 @@ a.icontext:active
 {
 	color:rgba(74,142,191,1);
 }
-.type1:hover, .type2:hover, .type3:hover, .type4:hover, .type5:hover 
-{
-	background-color:rgba(0, 0, 0, 0.7);
-	-webkit-transition: background-color 1s; /* Safari */
-    transition: background-color 1s;
-}
+
 .type1
 {
 	background-color:rgba(140, 43, 44, 0.7);
@@ -695,6 +690,20 @@ a.icontext:active
 {
 	background-color:rgba(52, 92, 117, 0.7);
 }
+
+.type1, .type2, .type3, .type4, .type5
+{
+	-webkit-transition: background-color 1s; /* Safari */
+    transition: background-color 1s;
+}
+
+.type1:hover, .type2:hover, .type3:hover, .type4:hover, .type5:hover 
+{
+	background-color:rgba(0, 0, 0, 0.7);
+	-webkit-transition: background-color 1s; /* Safari */
+    transition: background-color 1s;
+}
+
 /* == END Industry icons == */
 
 /* == Scrollbar CSS == */
