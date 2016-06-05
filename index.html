@@ -62,6 +62,16 @@ function googleTranslateElementInit() {
                    $('#dash').click(function(){$(this).find('i').toggleClass('fa-toggle-off fa-toggle-on');
                    $('.dashboard').toggle('fast');
                    });
+                   var gt_visible=0;
+                   $('#google_translate_element').click(function(){
+                    if(gt_visible==0)
+                        {$('iframe').show();gt_visible=1;}
+                    else
+                    {
+                    $('iframe').hide();gt_visible=0;
+                    }
+
+                        });
                    </script>
                     <li><a href="http://testing.nitt.edu/webmail.nitt.edu/horde/login.php">Webmail</a></li>
                     <li><a href="http://testing.nitt.edu/#">Sitemap</a></li>
@@ -181,7 +191,7 @@ function googleTranslateElementInit() {
                             </ul>
                         </li>
                         <li class="dropdown-menu-sub-indicator" style="font-size: 16px;">
-                            <a id="d" href="http://testing.nitt.edu/#" title="" class="department"><i class="fa fa-toggle-off"></i> Department</a>
+                            <a id="d" href="#" title="" class="department"><i class="fa fa-toggle-off"></i> Department</a>
 							<script>$('#d').click(function(){$(this).find('i').toggleClass('fa-toggle-off fa-toggle-on');});</script>
                             <ul class="sub-menu visible-xs" style="visibility: hidden; display: block;">
                                 <li><a href="http://testing.nitt.edu/home/academics/departments/cse/">Computer Science &amp; Engineering</a></li>
