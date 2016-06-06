@@ -707,6 +707,25 @@ a.icontext:active
 /* == END Industry icons == */
 
 /* == Scrollbar CSS == */
+.tab-content::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 8px;
+	background-color: #FFFFFF;
+}
+
+.tab-content::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: rgba(120,120,120,1)
+}
+
+.tab-content::-webkit-scrollbar-thumb
+{
+	border-radius: 8px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #999;
+}
 ::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
