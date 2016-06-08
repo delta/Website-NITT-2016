@@ -30,6 +30,7 @@ if(!defined('__PRAGYAN_CMS'))
         </script>
 		<script type="text/javascript" src="<?php echo $TEMPLATEBROWSERPATH; ?>/js/fix_nav.js"></script>
         <script type="text/javascript" src="<?php echo $TEMPLATEBROWSERPATH; ?>/js/disp_freq.js"></script>
+        <script type="text/javascript" src="<?php echo $TEMPLATEBROWSERPATH; ?>/js/search_navbar.js"></script>
         <script language="javascript" type="text/javascript">
         //defined here for use in javascript
         var templateBrowserPath = "<?php echo $TEMPLATEBROWSERPATH ?>";
@@ -179,7 +180,7 @@ function googleTranslateElementInit() {
                            <a href="#" title=""><i class="fa fa-caret-down"></i> Admissions</a>
 						   <ul class="sub-menu">
                                 <li><a href="#">B.Tech. </a></li>
-                                <li><a href="#">M.Tech. </a></li>
+                                <li><a href="#">M.Tech. </a></li>   
                                 <li><a href="#">Ph.D.</a></li>
                                 <li><a href="#">MCA</a></li>
                             </ul>
