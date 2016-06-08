@@ -41,41 +41,84 @@ function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
 }
 </script>
+<style type="text/css">
+    .goog-te-menu-value span {
+        color: black;
+    } 
+</style>
 
   </head>
   
   <body role="document" onload="<?php echo $STARTSCRIPTS; ?>">
-    <header class="myheader" >
-        <img src="<?php echo $TEMPLATEBROWSERPATH; ?>/image/header.png" style="position:relative;top:29px;" />
-    </header>
-  
-    <!-- device test, don't remove. javascript needed! -->
-    <!-- <span class="visible-xs"></span><span class="visible-sm"></span><span class="visible-md"></span><span class="visible-lg" style="height:0px;background-color:#cc0033;"></span> -->
-    <hr style="height:2px;background-color:#cc0033; margin:0"></hr>
-    <!-- device test end -->
-    
-    <div id="k-head" class="container-fluid" style="margin:0px;"><!-- container + head wrapper -->
-    	<div class="row"><!-- row -->
-            <nav class="k-functional-navig"><!-- functional navig -->
-                <ul class="list-inline pull-right">
-                    <li><a href="#">Departments</a></li>
+
+  <nav class="navbar navbar-default myrow0navbar"><!-- functional navig -->
+                <ul class="list-inline pull-right" >
+                    <li style="color:white"><a href="#">Departments</a></li>
+                   
+                    
+
                     <li><div id="google_translate_element"></div></li>
-                    <li><a href="#">Placements</a></li>
+                    <li><a href="http://testing.nitt.edu/#">Placements</a></li>
+                    <li><div id="google_translate_element"></div></li>
                    <li><a id="dash" href="#" title="" class="dash"><i class="fa fa-toggle-off"></i> Dashboard </a></li>
-				   <script>
-			       $('#dash').click(function(){$(this).find('i').toggleClass('fa-toggle-off fa-toggle-on');
-				   $('.dashboard').toggle('fast');
-				   });
-				   </script>
-                    <li><a href="webmail.nitt.edu/horde/login.php">Webmail</a></li>
-                    <li><a href="#">Sitemap</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
+                   <script>
+                   $('#dash').click(function(){$(this).find('i').toggleClass('fa-toggle-off fa-toggle-on');
+                   $('.dashboard').toggle('fast');
+                   });
+                   var gt_visible=0;
+                   $('#google_translate_element').click(function(){
+                    if(gt_visible==0)
+                        {$('iframe').show();gt_visible=1;}
+                    else
+                    {
+                    $('iframe').hide();gt_visible=0;
+                    }
+
+                        });
+                   </script>
+                    <li><a href="http://testing.nitt.edu/webmail.nitt.edu/horde/login.php">Webmail</a></li>
+                    <li><a href="http://testing.nitt.edu/#">Sitemap</a></li>
+                    <li><a href="http://testing.nitt.edu/#">Contact</a></li>
+                </ul>
+
+                <ul class="list-inline pull-left">
+                    <li><span style="font-size:15px;color:white"></span> <span style="color:#d1d1d1;font-size:12px"> 11 May, 2016 | <i class="fa fa-clock-o" aria-hidden="true"></i> 8:38:44 PM IST</span></li>
+                    <li><a href="http://testing.nitt.edu/#"><span style="font-size:20px"><i class="fa fa-home" aria-hidden="true"></i></span></a></li>
+          
+                    <li> 
+                   <form class="navbar-form top_search" style="margin-top:0px;" role="search">
+             
+                <input type="hidden" value="" id="hid_srch_text">
+                <div class="form-group" >
+                                <i class="fa fa-search" aria-hidden="true"></i> 
+                                 <i id="srch_load1" style="display:none" class="fa fa-refresh fa-spin-custom"></i>
+                                  <input type="text" class="form-control search_top" name="case_search" id="case_search" autocomplete="off" onclick="sch_slide();" onkeypress="onKeyPress(event,'case_search');" onkeydown="return goForSearch(event,'');" placeholder="Search here.." style="width: 120px;height:25px;margin-top:-5px;background:#233046;color:white">
+                                  
+
+                </div>
+                 
+                <div class="cb"></div>
+             </form>
+             <div id="ajax_search" class="ajx-srch-dv1"></div>
+                    </li>
+                   
+                </ul>
             
                 
                 
 
             </nav><!-- functional navig end -->
+    <header class="myheader" >
+        <img src="<?php echo $TEMPLATEBROWSERPATH; ?>/image/nitt-site-header_all.png" style="position:relative;top:-20px;" />
+    </header>
+  
+    <!-- device test, don't remove. javascript needed! -->
+    <!-- <span class="visible-xs"></span><span class="visible-sm"></span><span class="visible-md"></span><span class="visible-lg" style="height:0px;background-color:#cc0033;"></span> -->
+    <hr style="height:2px;background-color:#4E6E7D; margin:0"></hr>
+    <!-- device test end -->
+    
+    <div id="k-head" class="container-fluid" style="margin:0px;"><!-- container + head wrapper -->
+    	<div class="row"><!-- row -->
         
         	<div class="col-lg-12">
             <div class="container-fluid text-center dashboard"  hidden >
@@ -106,7 +149,7 @@ function googleTranslateElementInit() {
             
             	</div><!-- site logo end -->
 
-            	<nav id="k-menu affix" class="k-main-navig"><!-- main navig -->
+            	<nav id="k-menu affix" class="navbar-fixed-top" style="background-color: rgb(255, 255, 255);"><!-- main navig -->
         
                     <ul id="drop-down-left" class="k-dropdown-menu">
                         <li>
@@ -115,14 +158,14 @@ function googleTranslateElementInit() {
                         <li>
                             <a href="#" title=""><i class="fa fa-caret-down"></i> About</a>
 							<ul class="sub-menu">
-                                <li><a href="#"> Mission & Vision </a></li>
+                                <li><a href="#"> Mission &amp; Vision </a></li>
                                 <li><a href="#"> Alumni </a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#" title=""><i class="fa fa-caret-down"></i> Student Links</a>
 							<ul class="sub-menu">
-                                <li><a href="#">Forms & Downloads </a></li>
+                                <li><a href="#">Forms &amp;Downloads </a></li>
                                 <li><a href="#">Scholarships </a></li>
                                 <li><a href="#">Semester Results</a></li>
                                 <li><a href="#">Time Table</a></li>
@@ -146,14 +189,14 @@ function googleTranslateElementInit() {
 							<script>$('#d').click(function(){$(this).find('i').toggleClass('fa-toggle-off fa-toggle-on');});</script>
                             <ul class="sub-menu visible-xs">
                                 <li><a href="/home/academics/departments/cse/">Computer Science &amp; Engineering</a></li>
-                                <li><a href="/home/academics/departments/eee/">Electrical & Electronics Engineering</a></li>
-                                <li><a href="/home/academics/departments/ece/">Electronics & Communication Engineering</a></li>
-                                <li><a href="/home/academics/departments/ice">Instrumentation & Control Engineering</a></li>
+                                <li><a href="/home/academics/departments/eee/">Electrical &amp;Electronics Engineering</a></li>
+                                <li><a href="/home/academics/departments/ece/">Electronics &amp;Communication Engineering</a></li>
+                                <li><a href="/home/academics/departments/ice">Instrumentation &amp;Control Engineering</a></li>
                                 <li><a href="/home/academics/departments/mech">Mechanical Engineering</a></li>
                                 <li><a href="/home/academics/departments/civil">Civil Engineering</a></li>
                                 <li><a href="/home/academics/departments/chem">Chemical Engineering</a></li>
                                 <li><a href="/home/academics/departments/prod">Production Engineering</a></li>
-                                <li><a href="/home/academics/departments/meta">Metalurgical & Material's Engineering</a></li>
+                                <li><a href="/home/academics/departments/meta">Metalurgical &amp;Material's Engineering</a></li>
                                 <li>
                                     <a href="#">Others</a>
                                     <ul class="sub-menu">
@@ -182,7 +225,7 @@ function googleTranslateElementInit() {
 							<ul class="sub-menu">
                                 <li><a href="#">Placements at NITT </a></li>
                                 <li><a href="#">Scholarships </a></li>
-                                <li><a href="#">Consultancy & Research</a></li>
+                                <li><a href="#">Consultancy &amp; Research</a></li>
                                 <li><a href="#">MoU &lsquo;s signed</a></li>
 								<li><a href="#">Tender Invitations</a></li>
                                 <li><a href="#">Vendor Registrations</a></li>
@@ -206,21 +249,21 @@ function googleTranslateElementInit() {
                 <div class="col-md-3">
                     <a href="/home/academics/departments/civil">Civil Engineering</a><br>
                         <a href="/home/academics/departments/ca">Computer Applications</a><br>
-                        <a href="/home/academics/departments/cse">Computer Science & Engineering</a><br>
+                        <a href="/home/academics/departments/cse">Computer Science &amp;Engineering</a><br>
                         <a href="/home/academics/departments/dee">DEE</a><br>
                 </div>
                 <div class="col-md-4">
-                    <a href="/home/academics/departments/eee">Electrical & Electronics Engineering</a><br>
-                        <a href="/home/academics/departments/ece">Electronics & Communications Engineering</a><br>
+                    <a href="/home/academics/departments/eee">Electrical &amp;Electronics Engineering</a><br>
+                        <a href="/home/academics/departments/ece">Electronics &amp;Communications Engineering</a><br>
                         <a href="/home/academics/departments/humanities">Humanities</a><br>
-                        <a href="/home/academics/departments/ice">Instrumentation & Control Engineering</a><br>
+                        <a href="/home/academics/departments/ice">Instrumentation &amp;Control Engineering</a><br>
                         <a href="/home/academics/departments/management">Management Studies</a><br>
                 </div>
                 <div class="col-md-3">
                     
                         <a href="/home/academics/departments/maths">Mathematics</a><br>
                         <a href="/home/academics/departments/mech">Mechanical Engineering</a><br>
-                        <a href="/home/academics/departments/meta">Metalurgical & Materials Engineering</a><br>
+                        <a href="/home/academics/departments/meta">Metalurgical &amp;Materials Engineering</a><br>
                         <a href="/home/academics/departments/prod">Production Engineering</a><br>
                         <a href="/home/academics/departments/physics">Physics</a><br>
                         
@@ -274,7 +317,7 @@ function googleTranslateElementInit() {
                             <li><a href="#"><i class="fa fa-caret-right"></i> Academics Programmes</a></li>
                             <li><a href="#"><i class="fa fa-caret-right"></i> Departments</a></li>
                             <li><a href="#"><i class="fa fa-caret-right"></i> Faculty</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Rules & Regulations</a></li>
+                            <li><a href="#"><i class="fa fa-caret-right"></i> Rules &amp; Regulations</a></li>
                             <li><a href="#"><i class="fa fa-caret-right"></i> Scholarships</a></li>
                         </ul>
                     </div><!--//footer-col-inner-->
@@ -298,8 +341,8 @@ function googleTranslateElementInit() {
                         <h3>Students Life</h3>
                         <ul style="list-style:none;">
                             <li><a href="#"><i class="fa fa-caret-right"></i> Events</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Clubs & Associations</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Hostel & Messes</a></li>
+                            <li><a href="#"><i class="fa fa-caret-right"></i> Clubs &amp;Associations</a></li>
+                            <li><a href="#"><i class="fa fa-caret-right"></i> Hostel &amp;Messes</a></li>
                             <li><a href="#"><i class="fa fa-caret-right"></i> Office Of Dean(students)</a></li>
                             
                         </ul>
@@ -310,7 +353,7 @@ function googleTranslateElementInit() {
                     <div class="footer-col-inner paddedfooter">
                         <h3>Other Links</h3>
                         <ul style="list-style:none;">
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Tenders & Notices</a></li>
+                            <li><a href="#"><i class="fa fa-caret-right"></i> Tenders &amp;Notices</a></li>
                             <li><a href="#"><i class="fa fa-caret-right"></i> Job Opportunities</a></li>
                             <li><a href="#"><i class="fa fa-caret-right"></i> RTI</a></li>
                             <li><a href="#"><i class="fa fa-caret-right"></i> Recal-Alumini</a></li>
