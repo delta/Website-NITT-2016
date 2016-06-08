@@ -25,12 +25,21 @@
 	
 	/* ---------- handle navigation for smaller devices */
 	CHEF.mobileMenuClone = '';
-	if( $(window).width()<=1040){ CHEF.mobileMenuClone = $( '[id="k-menu affix"]' ).clone().attr( 'id', 'navigation-mobile' );}
+	
+	function menucloner(){
+	//var is_small_res = ( $( '.visible-xs' ).css( 'display' ) === 'block' );
+	var is_small_res = ($(window).width() <= 1040);	
+	if(is_small_res){ CHEF.mobileMenuClone = $( '[id="k-menu affix"]' ).clone().attr( 'id', 'navigation-mobile' );}
 	else {$('.k-main-navig').show();}
-	CHEF.mobileNav = function() {		
+
+}
+
+	CHEF.mobileNav = function() {
+		menucloner();
 		if( CHEF.mobileMenuClone!='' ) {
 			CHEF.mobileMenuClone.insertAfter( '[id="k-menu affix"]' );
 			$('.k-main-navig').hide();
+			$('#navigation-mobile').hide();
 			$( 'nav#navigation-mobile' ).removeClass( 'k-main-navig' );
 			$( 'nav#navigation-mobile > ul' ).removeAttr( 'id' ).removeClass( 'k-dropdown-menu' ).addClass( 'list-unstyled' );
 		}
