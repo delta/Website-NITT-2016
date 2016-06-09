@@ -150,7 +150,7 @@ function googleTranslateElementInit() {
             
             	</div><!-- site logo end -->
 
-            	<nav id="k-menu affix" class="navbar-fixed-top" style="background-color: rgb(255, 255, 255);"><!-- main navig -->
+            	<nav id="k-menu affix" class="k-main-navig" style="background-color: rgb(255, 255, 255);"><!-- main navig -->
         
                     <ul id="drop-down-left" class="k-dropdown-menu">
                         <li>
