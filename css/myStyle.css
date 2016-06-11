@@ -65,10 +65,11 @@ table.iconspanel td:hover {
 }
 
 .myrow0navbar{
-    background:#31495A;//#161A1D;
+    background:#31495A;/*#161A1D;*/
     padding-top:5px;
     padding-right:25px;
     padding-left:25px;
+    margin-bottom: 0px;
 }
 
 .myrow0navbar a:link, a:visited { color: white; text-decoration: none; font-size: 13px }
