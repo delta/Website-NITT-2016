@@ -74,7 +74,6 @@ table.iconspanel td:hover {
 .myrow0navbar a:link, a:visited { color: white; text-decoration: none; font-size: 13px }
 .myrow0navbar a:hover, a:focus { color: white; outline:thin; }
 
-.navbar {max-height:10px }
 
 #achievements { 
     margin: 20px auto; 
