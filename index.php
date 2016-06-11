@@ -109,6 +109,10 @@ function googleTranslateElementInit() {
                 
 
             </nav><!-- functional navig end -->
+
+
+    <div class="visible-xs" style="height:10px;background-color: #1A3246;"></div>       
+        
     <header class="myheader" >
         <img src="<?php echo $TEMPLATEBROWSERPATH; ?>/image/nitt-site-header_all.png"
         />
