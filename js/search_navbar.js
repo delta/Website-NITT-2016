@@ -16,7 +16,7 @@ function onKeyPress(e, id) {
     var unicode = e.charCode ? e.charCode : e.keyCode;
 
 $('#srch_load1').show();
-
+$('#cse-search-box').submit();
     if (unicode != 13) {
         var srch = $("#"+id).val();
         if (srch.trim() == "") {
