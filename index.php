@@ -110,7 +110,8 @@ function googleTranslateElementInit() {
 
             </nav><!-- functional navig end -->
     <header class="myheader" >
-        <img src="<?php echo $TEMPLATEBROWSERPATH; ?>/image/nitt-site-header_all.png" style="position:relative;top:-20px;" />
+        <img src="<?php echo $TEMPLATEBROWSERPATH; ?>/image/nitt-site-header_all.png"
+        />
     </header>
   
     <!-- device test, don't remove. javascript needed! -->
