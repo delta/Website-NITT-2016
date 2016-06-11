@@ -65,17 +65,17 @@ table.iconspanel td:hover {
 }
 
 .myrow0navbar{
-    background:#31495A;//#161A1D;
+    background:#31495A;/*#161A1D;*/
     padding-top:5px;
     padding-right:25px;
     padding-left:25px;
+    margin-bottom: 0px;
 }
 
 .myrow0navbar a:link { color: white; text-decoration: none; font-size: 13px }
 .myrow0navbar a:visited { color: white; text-decoration: none; font-size: 13px }
 .myrow0navbar a:hover { color: white; outline:thin; }
 .myrow0navbar a:focus { color: white; outline:thin; }
-.navbar {max-height:10px }
 
 #achievements { 
     margin: 20px auto; 

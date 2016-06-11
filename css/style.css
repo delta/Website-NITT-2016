@@ -45,11 +45,12 @@ h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus, h4 a:hov
 .title-median a:hover, .title-median a:focus, .title-titan a:hover, .title-titan a:focus, .page-title a:hover, .page-title a:focus { color: #FF1C00; }
 .title-median a { display: block; }
 /* == END titles, titles custom == */
-.myheader{
-	padding-bottom:30px;
-}
 .myheader img{
-	background-color:#1A3246; //#547088; //#ffffff;
+	background-color:#1A3246; /*#547088; //#ffffff;*/
+	max-width: 100%; 
+ 	min-width:100%; 
+ 	height: auto; 
+ 	position:relative;
 }
 .myheader,#k-head{
 	background-color: #ffffff;
