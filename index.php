@@ -87,13 +87,14 @@ function googleTranslateElementInit() {
                     <li><a href="http://testing.nitt.edu/#"><span style="font-size:20px"><i class="fa fa-home" aria-hidden="true"></i></span></a></li>
           
                     <li> 
-                   <form class="navbar-form top_search" style="margin-top:0px;" role="search">
-             
+                   <form id="cse-search-box" class="navbar-form top_search"  style="margin-top:0px;" action="https://google.com/cse" role="search">
+                <input type="hidden" name="cx" value="002946360089273064714:r9sou_38bhk">
+                <input type="hidden" name="ie" value="UTF-8">
                 <input type="hidden" value="" id="hid_srch_text">
                 <div class="form-group" >
                                 <i class="fa fa-search" aria-hidden="true"></i> 
                                  <i id="srch_load1" style="display:none" class="fa fa-refresh fa-spin-custom"></i>
-                                  <input type="text" class="form-control search_top" name="case_search" id="case_search" autocomplete="off" onclick="sch_slide();" onkeypress="onKeyPress(event,'case_search');" onkeydown="return goForSearch(event,'');" placeholder="Search here.." style="width: 120px;height:25px;margin-top:-5px;background:#233046;color:white">
+                                  <input type="text" class="form-control search_top" name="q" id="case_search" autocomplete="off" onclick="sch_slide();" onkeypress="onKeyPress(event,'case_search');" onkeydown="return goForSearch(event,'');" placeholder="Search here.." style="width: 120px;height:25px;margin-top:-5px;background:#233046;color:white">
                                   
 
                 </div>
