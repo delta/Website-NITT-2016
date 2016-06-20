@@ -25,6 +25,10 @@ $(document).scroll(function scroll_fix_nav	() {
 }
 });
 
+var date = new Date();
+$('#date').html(date.toDateString() + ' | ');
+$("#time").html(date.toTimeString()+' ');
+
 var is_small_res = ($(window).width() <= 1040);
 var row0 = $('.myrow0navbar')[0];
   if(is_small_res)

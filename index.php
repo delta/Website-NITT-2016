@@ -83,7 +83,7 @@ function googleTranslateElementInit() {
                 </ul>
 
                 <ul class="list-inline pull-left">
-                    <li><span style="font-size:15px;color:white"></span> <span style="color:#d1d1d1;font-size:12px"> 11 May, 2016 | <i class="fa fa-clock-o" aria-hidden="true"></i> 8:38:44 PM IST</span></li>
+                    <li><span style="font-size:15px;color:white"></span> <span style="color:#d1d1d1;font-size:12px"><span id="date"> </span><i class="fa fa-clock-o" aria-hidden="true"></i> <span id="time"></span></span></li>
                     <li><a href="http://testing.nitt.edu/#"><span style="font-size:20px"><i class="fa fa-home" aria-hidden="true"></i></span></a></li>
           
                     <li> 
