@@ -43,7 +43,12 @@ var row0 = $('.myrow0navbar')[0];
   }
 console.log(row0);
 
-
+win_height = $(window).innerHeight();
+if(win_height<768)
+{
+  $('.facitem').css('width','300px')
+}
+else $('.facitem').css('height','200px');
 $('.search-icon').css('margin', '0');
 
 // else {
@@ -74,4 +79,10 @@ var row01 = $('.myrow0navbar')[0];
     $('header.myheader').css('margin-top','0px');
 
   }
+
+   if(win_height<768)
+  {
+    $('.facitem').css('width','300px')
+  }
+  else $('.facitem').css('height','200px');
 });
