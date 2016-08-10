@@ -1,7 +1,7 @@
 function sch_slide(){
     //$(".search_top").onClick(function(){
     $(".search_top").animate({
-        width:'200px'
+        width:'150px'
     }, 400);
     // });
     $(".search_top").blur(function(){

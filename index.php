@@ -54,11 +54,8 @@ function googleTranslateElementInit() {
 
   <nav class="navbar navbar-default myrow0navbar"><!-- functional navig -->
                 <ul class="list-inline pull-right" >
-                    <li style="color:white"><a href="#">Departments</a></li>
-                   
-                    
-
                     <li><div id="google_translate_element"></div></li>
+					                    <li style="color:white"><a href="#">Departments</a></li>
                     <li><a href="http://testing.nitt.edu/#">Placements</a></li>
                     <li><div id="google_translate_element"></div></li>
                    <li><a id="dash" href="#" title="" class="dash"><i class="fa fa-toggle-off"></i> Dashboard </a></li>
@@ -121,7 +118,7 @@ function googleTranslateElementInit() {
   
     <!-- device test, don't remove. javascript needed! -->
     <!-- <span class="visible-xs"></span><span class="visible-sm"></span><span class="visible-md"></span><span class="visible-lg" style="height:0px;background-color:#cc0033;"></span> -->
-    <hr style="height:2px;background-color:#4E6E7D; margin:0"></hr>
+    <!--<hr style="height:2px;background-color:#4E6E7D; margin:0"></hr>-->
     <!-- device test end -->
     
     <div id="k-head" class="container-fluid" style="margin:0px;"><!-- container + head wrapper -->
@@ -379,7 +376,7 @@ function googleTranslateElementInit() {
             	<div class="col-lg-12">
                 
                 	<p class="copy-text text-inverse">
-                 <small class="copyright col-md-12 col-sm-12 col-xs-12 text-center">Copyright @ 2015 National Institute of Technology | Made with &#10084; by Delta Force</small>
+                 <small class="copyright col-md-12 col-sm-12 col-xs-12 text-center">Copyright @ 2015 National Institute of Technology | Made with &#10084; by <a href="http://testing.nitt.edu/home/webteam"> Web-Team, NIT Trichy</a></small>
                     </p>
                 
                 </div>
