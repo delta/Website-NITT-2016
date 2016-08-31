@@ -74,7 +74,7 @@ function googleTranslateElementInit() {
 
                         });
                    </script>
-                    <li><a href="http://testing.nitt.edu/webmail.nitt.edu/horde/login.php">Webmail</a></li>
+                    <li><a href="http://webmail.nitt.edu/horde/login.php">Webmail</a></li>
                     <li><a href="http://testing.nitt.edu/#">Sitemap</a></li>
                     <li><a href="http://testing.nitt.edu/#">Contact</a></li>
                 </ul>
@@ -163,29 +163,29 @@ function googleTranslateElementInit() {
                             <a href="#" title=""><i class="fa fa-caret-down"></i> About</a>
 							<ul class="sub-menu">
                                 <li><a href="#"> Mission &amp; Vision </a></li>
-                                <li><a href="#"> Alumni </a></li>
+                                <li><a href="/home/students/clubsnassocs/alumni/"> Alumni </a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#" title=""><i class="fa fa-caret-down"></i> Student Links</a>
 							<ul class="sub-menu">
-                                <li><a href="#">Forms &amp;Downloads </a></li>
-                                <li><a href="#">Scholarships </a></li>
-                                <li><a href="#">Semester Results</a></li>
-                                <li><a href="#">Time Table</a></li>
-								<li><a href="#">Clubs</a></li>
-                                <li><a href="#">Sports</a></li>
+                                <li><a href="/home/academics/formats/">Forms &amp;Downloads </a></li>
+                                <li><a href="/home/academics/scholarships/">Scholarships </a></li>
+                                <li><a href="/prm/showresult.htm">Semester Results</a></li>
+                                <li><a href="/home/academics/Time%20Table">Time Table</a></li>
+								<li><a href="/home/students/clubsnassocs/">Clubs</a></li>
+                                <li><a href="/home/students/clubsnassocs/sports">Sports</a></li>
                                 <li><a href="#">Portals</a></li>
-                                <li><a href="#">Important Contacts</a></li>
+                                <li><a href="/home/students/facilitiesnservices/ComputerSupportGroup/contact%20address/">Contact</a></li>
                             </ul>
                         </li>
                         <li>
-                           <a href="#" title=""><i class="fa fa-caret-down"></i> Admissions</a>
+                           <a  href="/home/admissions/" title=""><i class="fa fa-caret-down"></i> Admissions</a>
 						   <ul class="sub-menu">
-                                <li><a href="#">B.Tech. </a></li>
-                                <li><a href="#">M.Tech. </a></li>   
-                                <li><a href="#">Ph.D.</a></li>
-                                <li><a href="#">MCA</a></li>
+                                <li><a href="/home/admissions/btech/">B.Tech. </a></li>
+                                <li><a href="/home/admissions/mtech/">M.Tech. </a></li>   
+                                <li><a href="/home/admissions/phd/">Ph.D.</a></li>
+                                <li><a href="/home/admissions/mca/">MCA</a></li>
                             </ul>
                         </li>
                         <li>
@@ -217,7 +217,7 @@ function googleTranslateElementInit() {
                         <li>
                             <a href="#" title=""><i class="fa fa-caret-down"></i> Initiatives</a>
                             <ul class="sub-menu">
-                                <li><a href="#">CEDI </a></li>
+                                <li><a href="/home/other/cedi">CEDI </a></li>
                                 <li><a href="#">Startup Weekend</a></li>
                                 <li><a href="#">Internet Of Things</a></li>
                                 <li><a href="#">Innovation Center</a></li>
@@ -225,13 +225,13 @@ function googleTranslateElementInit() {
                             </ul>
                         </li>
                         <li>
-                            <a href="#" title=""><i class="fa fa-caret-down"></i> Industry</a>
+                            <a href="/home/icsr/iii" title=""><i class="fa fa-caret-down"></i> Industry</a>
 							<ul class="sub-menu">
-                                <li><a href="#">Placements at NITT </a></li>
-                                <li><a href="#">Scholarships </a></li>
-                                <li><a href="#">Consultancy &amp; Research</a></li>
-                                <li><a href="#">MoU &lsquo;s signed</a></li>
-								<li><a href="#">Tender Invitations</a></li>
+                                <li><a href="/home/students/facilitiesnservices/tp/">Placements at NITT </a></li>
+                                <li><a href="/home/academics/scholarships/">Scholarships </a></li>
+                                <li><a href="/home/rc">Consultancy &amp; Research</a></li>
+                                <li><a href="/home/academics/mou">MoU &lsquo;s signed</a></li>
+								<li><a href="/other/tenders">Tender Invitations</a></li>
                                 <li><a href="#">Vendor Registrations</a></li>
                             </ul>
                         </li>
@@ -318,11 +318,11 @@ function googleTranslateElementInit() {
                     <div class="footer-col-inner paddedfooter">
                         <h3>Academics</h3>
                         <ul style="list-style:none;">
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Academics Programmes</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Departments</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Faculty</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Rules &amp; Regulations</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Scholarships</a></li>
+                            <li><a href="/home/academics"><i class="fa fa-caret-right"></i> Academics Programmes</a></li>
+                            <li><a href="/home/academics/departments"><i class="fa fa-caret-right"></i> Departments</a></li>
+                            <li><a href="/home/academics/faculty"><i class="fa fa-caret-right"></i> Faculty</a></li>
+                            <li><a href="/home/academics/rules"><i class="fa fa-caret-right"></i> Rules &amp; Regulations</a></li>
+                            <li><a href="/home/academics/scholarships/"><i class="fa fa-caret-right"></i> Scholarships</a></li>
                         </ul>
                     </div><!--//footer-col-inner-->
                 </div><!--//foooter-col-->
@@ -331,11 +331,11 @@ function googleTranslateElementInit() {
                     <div class="footer-col-inner paddedfooter">
                         <h3>Admissions</h3>
                         <ul style="list-style:none;">
-                            <li><a href="#"><i class="fa fa-caret-right"></i> B.Tech/B.Arc</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> M.Tech/M.Sc</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> MCA/MBA</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> MS(research)</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Ph.D</a></li>
+                            <li><a href="/home/admissions/btech/"><i class="fa fa-caret-right"></i> B.Tech/B.Arch</a></li>
+                            <li><a href="/home/admissions/mtech/"><i class="fa fa-caret-right"></i> M.Tech/M.Sc</a></li>
+                            <li><a href="/home/admissions/mca/"><i class="fa fa-caret-right"></i> MCA/MBA</a></li>
+                            <li><a href="/home/admissions/ms"><i class="fa fa-caret-right"></i> MS(research)</a></li>
+                            <li><a href="/home/admissions/phd"><i class="fa fa-caret-right"></i> Ph.D</a></li>
                         </ul>
                     </div><!--//footer-col-inner-->
                 </div><!--//foooter-col-->
@@ -344,10 +344,10 @@ function googleTranslateElementInit() {
                     <div class="footer-col-inner paddedfooter">
                         <h3>Students Life</h3>
                         <ul style="list-style:none;">
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Events</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Clubs &amp;Associations</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Hostel &amp;Messes</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Office Of Dean(students)</a></li>
+                            <li><a href="/home/students/events"><i class="fa fa-caret-right"></i> Events</a></li>
+                            <li><a href="/home/students/clubsnassocs"><i class="fa fa-caret-right"></i> Clubs &amp;Associations</a></li>
+                            <li><a href="/home/students/facilitiesnservices/hostelsnmess/messes/"><i class="fa fa-caret-right"></i> Hostel &amp;Messes</a></li>
+                            <li><a href="/students/office"><i class="fa fa-caret-right"></i> Office Of Dean(students)</a></li>
                             
                         </ul>
                     </div><!--//footer-col-inner-->
