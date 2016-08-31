@@ -55,8 +55,8 @@ function googleTranslateElementInit() {
   <nav class="navbar navbar-default myrow0navbar"><!-- functional navig -->
                 <ul class="list-inline pull-right" >
                     <li><div id="google_translate_element"></div></li>
-					                    <li style="color:white"><a href="#">Departments</a></li>
-                    <li><a href="http://testing.nitt.edu/#">Placements</a></li>
+					                    <li style="color:white"><a href="/home/academics/departments">Departments</a></li>
+                    <li><a href="/students/facilitiesnservices/tp/">Placements</a></li>
                     <li><div id="google_translate_element"></div></li>
                    <li><a id="dash" href="#" title="" class="dash"><i class="fa fa-toggle-off"></i> Dashboard </a></li>
                    <script>
@@ -75,13 +75,13 @@ function googleTranslateElementInit() {
                         });
                    </script>
                     <li><a href="http://webmail.nitt.edu/horde/login.php">Webmail</a></li>
-                    <li><a href="http://testing.nitt.edu/#">Sitemap</a></li>
-                    <li><a href="http://testing.nitt.edu/#">Contact</a></li>
+                    <li><a href="/sitemap">Sitemap</a></li>
+                    <li><a href="/contact">Contact</a></li>
                 </ul>
 
                 <ul class="list-inline pull-left">
                     <li><span style="font-size:15px;color:white"></span> <span style="color:#d1d1d1;font-size:12px"><span id="date"> </span><i class="fa fa-clock-o" aria-hidden="true"></i> <span id="time"></span></span></li>
-                    <li><a href="http://testing.nitt.edu/#"><span style="font-size:20px"><i class="fa fa-home" aria-hidden="true"></i></span></a></li>
+                    <li><a href="#"><span style="font-size:20px"><i class="fa fa-home" aria-hidden="true"></i></span></a></li>
           
                     <li> 
                    <form id="cse-search-box" class="navbar-form top_search"  style="margin-top:0px;" action="https://google.com/cse" role="search">
