@@ -216,6 +216,8 @@ span.alter-menu-icon { display: block; width: 24px; height: 24px; background: ur
 /* == site subfooter == */
 #k-subfooter { background-color:#17252F; //#274F6D;//#111; }
 .copy-text { font-size: 11px; line-height: 16px; margin-bottom: 0; padding: 20px 0; text-transform: uppercase; }
+.acknowledgement {	color: rgba(249, 147, 147, 1); }
+.copyright { color: #FFFFFF; }
 /* == END site subfooter == */
 
 /* == BLOG == */

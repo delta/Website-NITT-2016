@@ -36,8 +36,8 @@ if(!defined('__PRAGYAN_CMS'))
         var templateBrowserPath = "<?php echo $TEMPLATEBROWSERPATH ?>";
         var urlRequestRoot = "<?php echo $urlRequestRoot?>";
     </script>
-    <script type=text/javascript src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script type=text/javascript>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
 }
@@ -112,9 +112,14 @@ function googleTranslateElementInit() {
     <div class="visible-xs" style="height:10px;background-color: #1A3246;"></div>       
         
     <header class="myheader" >
-        <img src="<?php echo $TEMPLATEBROWSERPATH; ?>/image/nitt-site-header_all.png"
-        />
+        <img id="headerimg" src="<?php echo $TEMPLATEBROWSERPATH; ?>/image/nitt-site-header_all.png"/>
     </header>
+	<script>
+		if($(window).width() < 1040)
+		{
+			$(".myheader").children("#headerimg").attr("src", "<?php echo $TEMPLATEBROWSERPATH; ?>/image/mobile_header.png");
+		}
+	</script>
   
     <!-- device test, don't remove. javascript needed! -->
     <!-- <span class="visible-xs"></span><span class="visible-sm"></span><span class="visible-md"></span><span class="visible-lg" style="height:0px;background-color:#cc0033;"></span> -->
@@ -302,7 +307,7 @@ function googleTranslateElementInit() {
                 <?php echo $ERRORSTRING; ?>
                 <?php if(isset($WIDGETS[2])) echo $WIDGETS[2]; ?>
                 <?php echo $CONTENT; ?>
-                <?php if(isset($WIDGETS[3])) echo $WIDGETS[3]; ?>
+                <?php if(isset($WIDGETS[3])) echo $WIDGETS[3]; ?>	
             </div>
             <div class="bottomcontentbar"></div>
         </div>
@@ -376,7 +381,8 @@ function googleTranslateElementInit() {
             	<div class="col-lg-12">
                 
                 	<p class="copy-text text-inverse">
-                 <small class="copyright col-md-12 col-sm-12 col-xs-12 text-center">Copyright @ 2015 National Institute of Technology | Made with &#10084; by <a href="http://testing.nitt.edu/home/webteam"> Web-Team, NIT Trichy</a></small>
+                 <small class="copyright col-md-12 col-sm-12 col-xs-12 text-center">Copyright @ 2015 National Institute of Technology </small></br> 
+				 <small class="acknowledgement col-md-12 col-sm-12 col-xs-12 text-center">Made with &#10084; by <a href="home/webteam"> Web-Team, NIT Trichy</a></small>
                     </p>
                 </div>
                 
