@@ -357,11 +357,11 @@ function googleTranslateElementInit() {
                     <div class="footer-col-inner paddedfooter">
                         <h3>Other Links</h3>
                         <ul style="list-style:none;">
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Tenders &amp;Notices</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Job Opportunities</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> RTI</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Recal-Alumini</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> SiteMap</a></li>
+                            <li><a href="/other/tenders"><i class="fa fa-caret-right"></i> Tenders &amp;Notices</a></li>
+                            <li><a href="/home/other/jobs/"><i class="fa fa-caret-right"></i> Job Opportunities</a></li>
+                            <li><a href="/righttoinfoact"><i class="fa fa-caret-right"></i> RTI</a></li>
+                            <li><a href="/students/clubsnassocs/alumni/recal/"><i class="fa fa-caret-right"></i> Recal-Alumini</a></li>
+                            <li><a href="/sitemap"><i class="fa fa-caret-right"></i> SiteMap</a></li>
                             
                         </ul>
                     </div><!--//footer-col-inner-->
@@ -378,8 +378,8 @@ function googleTranslateElementInit() {
                 	<p class="copy-text text-inverse">
                  <small class="copyright col-md-12 col-sm-12 col-xs-12 text-center">Copyright @ 2015 National Institute of Technology | Made with &#10084; by <a href="http://testing.nitt.edu/home/webteam"> Web-Team, NIT Trichy</a></small>
                     </p>
-                
                 </div>
+                
             
             </div><!-- row end -->
         
