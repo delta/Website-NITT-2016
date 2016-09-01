@@ -80,9 +80,10 @@ var row01 = $('.myrow0navbar')[0];
 
   }
 
+  win_height = $(window).innerHeight();
    if(win_height<768)
-  {
+   {
     $('.facitem').css('width','300px')
-  }
-  else $('.facitem').css('height','200px');
+   }
+   else $('.facitem').css('height','200px');
 });
