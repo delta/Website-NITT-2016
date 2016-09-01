@@ -55,8 +55,8 @@ function googleTranslateElementInit() {
   <nav class="navbar navbar-default myrow0navbar"><!-- functional navig -->
                 <ul class="list-inline pull-right" >
                     <li><div id="google_translate_element"></div></li>
-					                    <li style="color:white"><a href="#">Departments</a></li>
-                    <li><a href="http://testing.nitt.edu/#">Placements</a></li>
+					<li style="color:white"><a href="/home/academics/departments/">Departments</a></li>
+                    <li><a href="/home/students/facilitiesnservices/tp/">Placements</a></li>
                     <li><div id="google_translate_element"></div></li>
                    <li><a id="dash" href="#" title="" class="dash"><i class="fa fa-toggle-off"></i> Dashboard </a></li>
                    <script>
@@ -75,8 +75,8 @@ function googleTranslateElementInit() {
                         });
                    </script>
                     <li><a href="http://testing.nitt.edu/webmail.nitt.edu/horde/login.php">Webmail</a></li>
-                    <li><a href="http://testing.nitt.edu/#">Sitemap</a></li>
-                    <li><a href="http://testing.nitt.edu/#">Contact</a></li>
+                    <li><a href="/home/sitemap/">Sitemap</a></li>
+                    <li><a href="/home/contact/">Contact</a></li>
                 </ul>
 
                 <ul class="list-inline pull-left">
@@ -157,39 +157,39 @@ function googleTranslateElementInit() {
         
                     <ul id="drop-down-left" class="k-dropdown-menu">
                         <li>
-                            <a href="#" title="">Homepage</a>
+                            <a href="/home/" title="">Homepage</a>
                         </li>
                         <li>
-                            <a href="#" title=""><i class="fa fa-caret-down"></i> About</a>
+                            <a href="/home/about/" title=""><i class="fa fa-caret-down"></i> About</a>
 							<ul class="sub-menu">
                                 <li><a href="#"> Mission &amp; Vision </a></li>
-                                <li><a href="#"> Alumni </a></li>
+                                <li><a href="/home/students/clubsnassocs/alumni/"> Alumni </a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#" title=""><i class="fa fa-caret-down"></i> Student Links</a>
+                            <a href="/home/students/" title=""><i class="fa fa-caret-down"></i> Student Links</a>
 							<ul class="sub-menu">
-                                <li><a href="#">Forms &amp;Downloads </a></li>
-                                <li><a href="#">Scholarships </a></li>
-                                <li><a href="#">Semester Results</a></li>
+                                <li><a href="/home/academics/formats/">Forms &amp;Downloads </a></li>
+                                <li><a href="/home/academics/scholarships/">Scholarships </a></li>
+                                <li><a href="/prm/showresult.htm">Semester Results</a></li>
                                 <li><a href="#">Time Table</a></li>
-								<li><a href="#">Clubs</a></li>
-                                <li><a href="#">Sports</a></li>
-                                <li><a href="#">Portals</a></li>
-                                <li><a href="#">Important Contacts</a></li>
+								<li><a href="/home/students/clubsnassocs/">Clubs</a></li>
+                                <li><a href="/home/students/facilitiesnservices/sportscenter/">Physical Education</a></li>
+                                <li><a href="/home/intranet/">Portals</a></li>
+                                <li><a href="/home/contact/">Important Contacts</a></li>
                             </ul>
                         </li>
                         <li>
-                           <a href="#" title=""><i class="fa fa-caret-down"></i> Admissions</a>
+                           <a href="/home/admissions" title=""><i class="fa fa-caret-down"></i> Admissions</a>
 						   <ul class="sub-menu">
-                                <li><a href="#">B.Tech. </a></li>
-                                <li><a href="#">M.Tech. </a></li>   
-                                <li><a href="#">Ph.D.</a></li>
-                                <li><a href="#">MCA</a></li>
+                                <li><a href="/home/admissions/btech/">B.Tech. </a></li>
+                                <li><a href="/home/admissions/mtech/">M.Tech. </a></li>   
+                                <li><a href="/home/admissions/phd/">Ph.D.</a></li>
+                                <li><a href="/home/admissions/mca/">MCA</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a id="d" href="#" title="" class="department"><i class="fa fa-toggle-off"></i> Department</a>
+                            <a id="d" href="/home/academics/departments/" title="" class="department"><i class="fa fa-toggle-off"></i> Department</a>
 							<script>$('#d').click(function(){$(this).find('i').toggleClass('fa-toggle-off fa-toggle-on');});</script>
                             <ul class="sub-menu visible-xs">
                                 <li><a href="/home/academics/departments/cse/">Computer Science &amp; Engineering</a></li>
@@ -217,7 +217,7 @@ function googleTranslateElementInit() {
                         <li>
                             <a href="#" title=""><i class="fa fa-caret-down"></i> Initiatives</a>
                             <ul class="sub-menu">
-                                <li><a href="#">CEDI </a></li>
+                                <li><a href="/home/other/cedi/">CEDI </a></li>
                                 <li><a href="#">Startup Weekend</a></li>
                                 <li><a href="#">Internet Of Things</a></li>
                                 <li><a href="#">Innovation Center</a></li>
@@ -227,11 +227,11 @@ function googleTranslateElementInit() {
                         <li>
                             <a href="#" title=""><i class="fa fa-caret-down"></i> Industry</a>
 							<ul class="sub-menu">
-                                <li><a href="#">Placements at NITT </a></li>
-                                <li><a href="#">Scholarships </a></li>
-                                <li><a href="#">Consultancy &amp; Research</a></li>
-                                <li><a href="#">MoU &lsquo;s signed</a></li>
-								<li><a href="#">Tender Invitations</a></li>
+                                <li><a href="/home/students/facilitiesnservices/tp/">Placements at NITT </a></li>
+                                <li><a href="/home/academics/scholarships/">Scholarships </a></li>
+                                <li><a href="/home/rc/">Consultancy &amp; Research</a></li>
+                                <li><a href="/home/icsr/iii/mou/">MoU &lsquo;s signed</a></li>
+								<li><a href="/home/other/tenders/">Tender Invitations</a></li>
                                 <li><a href="#">Vendor Registrations</a></li>
                             </ul>
                         </li>
