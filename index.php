@@ -162,27 +162,13 @@ function googleTranslateElementInit() {
         
                     <ul id="drop-down-left" class="k-dropdown-menu">
                         <li>
-                            <a href="/home/" title="">Homepage</a>
+                            <a href="/about/" title="">About</a>
                         </li>
                         <li>
-                            <a href="/home/about/" title=""><i class="fa fa-caret-down"></i> About</a>
-							<ul class="sub-menu">
-                                <li><a href="#"> Mission &amp; Vision </a></li>
-                                <li><a href="/home/students/clubsnassocs/alumni/"> Alumni </a></li>
-                            </ul>
+                            <a href="/administration/" title="admin">Administration</a>
                         </li>
                         <li>
-                            <a href="/home/students/" title=""><i class="fa fa-caret-down"></i> Student Links</a>
-							<ul class="sub-menu">
-                                <li><a href="/home/academics/formats/">Forms &amp;Downloads </a></li>
-                                <li><a href="/home/academics/scholarships/">Scholarships </a></li>
-                                <li><a href="/prm/showresult.htm">Semester Results</a></li>
-                                <li><a href="/home/academics/Time%20Table">Time Table</a></li>
-								<li><a href="/home/students/clubsnassocs/">Clubs</a></li>
-                                <li><a href="/home/students/clubsnassocs/sports">Sports</a></li>
-                                <li><a href="/home/intranet/">Portals</a></li>
-                                <li><a href="/home/students/facilitiesnservices/ComputerSupportGroup/contact%20address/">Contact</a></li>
-                            </ul>
+                            <a href="/academics/" title="Academics">Academics</a>
                         </li>
                         <li>
                            <a  href="/home/admissions/" title=""><i class="fa fa-caret-down"></i> Admissions</a>
@@ -220,25 +206,10 @@ function googleTranslateElementInit() {
                             </ul>
                         </li>
                         <li>
-                            <a href="#" title=""><i class="fa fa-caret-down"></i> Initiatives</a>
-                            <ul class="sub-menu">
-                                <li><a href="/home/other/cedi/">CEDI </a></li>
-                                <li><a href="#">Startup Weekend</a></li>
-                                <li><a href="#">Internet Of Things</a></li>
-                                <li><a href="#">Innovation Center</a></li>
-                                <li><a href="#">Green Campus</a></li>
-                            </ul>
+                            <a href="/students/events/" title="events">Events </a>
                         </li>
                         <li>
-                            <a href="/home/icsr/iii" title=""><i class="fa fa-caret-down"></i> Industry</a>
-							<ul class="sub-menu">
-                                <li><a href="/home/students/facilitiesnservices/tp/">Placements at NITT </a></li>
-                                <li><a href="/home/academics/scholarships/">Scholarships </a></li>
-                                <li><a href="/home/rc">Consultancy &amp; Research</a></li>
-                                <li><a href="/home/academics/mou">MoU &lsquo;s signed</a></li>
-								<li><a href="/other/tenders">Tender Invitations</a></li>
-                                <li><a href="#">Vendor Registrations</a></li>
-                            </ul>
+                            <a href="/contact" title="contact">Contact</a>
                         </li>
                     </ul>
         
