@@ -165,10 +165,10 @@ function googleTranslateElementInit() {
                             <a href="/about/" title="">About</a>
                         </li>
                         <li>
-                            <a href="/administration/" title="admin">Administration</a>
+                            <a href="/administration/" title="">Administration</a>
                         </li>
                         <li>
-                            <a href="/academics/" title="Academics">Academics</a>
+                            <a href="/academics/" title="">Academics</a>
                         </li>
                         <li>
                            <a  href="/home/admissions/" title=""><i class="fa fa-caret-down"></i> Admissions</a>
@@ -206,10 +206,10 @@ function googleTranslateElementInit() {
                             </ul>
                         </li>
                         <li>
-                            <a href="/students/events/" title="events">Events </a>
+                            <a href="/students/events/" title="">Events </a>
                         </li>
                         <li>
-                            <a href="/contact" title="contact">Contact</a>
+                            <a href="/contact" title="">Contact</a>
                         </li>
                     </ul>
         
