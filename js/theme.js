@@ -25,7 +25,7 @@
 	
 	/* ---------- handle navigation for smaller devices */
 	CHEF.mobileMenuClone = '';
-	
+
 	function menucloner(){
 	//var is_small_res = ( $( '.visible-xs' ).css( 'display' ) === 'block' );
 	var is_small_res = ($(window).width() <= 1040);	
@@ -33,17 +33,19 @@
 	else {$('.k-main-navig').show();}
 
 }
-
 	CHEF.mobileNav = function() {
+
 		menucloner();
 		if( CHEF.mobileMenuClone!='' ) {
 			CHEF.mobileMenuClone.insertAfter( '[id="k-menu affix"]' );
-			$('.k-main-navig').hide();
+			$('[id="k-menu affix"]').hide();
 			$('#navigation-mobile').hide();
 			$( 'nav#navigation-mobile' ).removeClass( 'k-main-navig' );
 			$( 'nav#navigation-mobile > ul' ).removeAttr( 'id' ).removeClass( 'k-dropdown-menu' ).addClass( 'list-unstyled' );
 		}
 	}
+
+
 	CHEF.listenerMenu = function() {
 		$( '#mobile-nav-switch' ).on( 'click', function(e) {
 			$( this ).toggleClass( 'open' );
@@ -62,7 +64,8 @@
 		} );
 	}
 	CHEF.chckNavigOpened = function() {
-		var is_small_res = ( $( '.visible-xs' ).css( 'display' ) === 'block' ) ? true : false;
+		// var is_small_res = ( $( '.visible-xs' ).css( 'display' ) === 'block' ) ? true : false;
+		var is_small_res = ($(window).width() <= 1040);	
 		var is_mobile_nav_visible = ( $( 'nav#navigation-mobile' ).css( 'display' ) === 'block' ) ? true : false;
 		if( !is_small_res && is_mobile_nav_visible ) {
 			$( 'nav#navigation-mobile' ).css( 'display', 'none' );
