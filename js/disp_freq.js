@@ -9,7 +9,7 @@ var curr_vals = {
 function disp(start , dir)
 {
 
-	var tot_items = $('.quote').length;
+	var tot_items = $('.testimonial > a').length;
 
 
 	if(start)
