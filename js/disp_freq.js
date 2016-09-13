@@ -105,7 +105,7 @@ function disp4(start , dir)
 
 $(document).ready(function(){
 
-	disp(1 ,0);
+	// disp(1 ,0);
 	disp2(1,0);
 	disp3(1,0);
 	disp4(1,0);
