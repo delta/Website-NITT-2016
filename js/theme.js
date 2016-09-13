@@ -82,6 +82,10 @@
 			CHEF.mobileNav();
 			$('.k-main-navig').css('display' , 'none');
 			$('.paddedfooter > ul').css('display' , 'none');
+			$('#navigation-mobile > .list-unstyled > li > .sub-menu').css('display','none');
+			$('#navigation-mobile > .list-unstyled > li > a > i').css('display','none');
+			$('#navigation-mobile > .list-unstyled > li').css('text-align','center');
+
 		}
 	}
 	/* ---------- end handle top-search toggle ---------- */
