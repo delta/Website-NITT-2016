@@ -180,7 +180,7 @@
                         <li>
                             <a id="d" href="#" title="" class="department"><i class="fa fa-toggle-off"></i> Department</a>
 							<script>$('#d').click(function(){$(this).find('i').toggleClass('fa-toggle-off fa-toggle-on');});</script>
-                            <ul class="sub-menu visible-xs">
+                            <ul class="sub-menu">
                                 <li><a href="/home/academics/departments/cse/">Computer Science &amp; Engineering</a></li>
                                 <li><a href="/home/academics/departments/eee/">Electrical &amp;Electronics Engineering</a></li>
                                 <li><a href="/home/academics/departments/ece/">Electronics &amp;Communication Engineering</a></li>
