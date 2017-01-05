@@ -36,6 +36,14 @@ span.text {
 {
     height: 180px;
 }
+span.cms-actionbarPageItem
+{
+    padding-right: 20px;
+}
+span.cms-actionbarModuleItem
+{
+    padding-right: 20px;
+}
 
 table
 {
