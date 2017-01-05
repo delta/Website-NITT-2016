@@ -32,6 +32,10 @@ span.text {
 	margin:20px;
 	color:black;
 }
+.thumbnail
+{
+    height: 180px;
+}
 
 table
 {
